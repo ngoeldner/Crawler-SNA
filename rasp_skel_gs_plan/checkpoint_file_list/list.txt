@@ -1,0 +1,109 @@
+exp_number: 17
+og_number:  26
+has_checkpoint
+33 20
+has_checkpoint
+35 150
+exp_number: 17
+og_number:  28
+has_checkpoint
+30 150
+has_checkpoint
+55 10
+exp_number: 17
+og_number:  31
+has_checkpoint
+75 10
+has_checkpoint
+35 150
+exp_number: 18
+og_number:  63
+has_checkpoint
+35 150
+has_checkpoint
+55 10
+exp_number: 18
+og_number:  68
+has_checkpoint
+110 13
+has_checkpoint
+105 155
+exp_number: 18
+og_number:  83
+has_checkpoint
+85 145
+has_checkpoint
+85 5
+exp_number: 18
+og_number: 100
+has_checkpoint
+55 145
+does_not_have_checkpoint
+exp_number: 18
+og_number: 101
+has_checkpoint
+10 140
+exp_number: 19
+og_number:  43
+has_checkpoint
+10 140
+has_checkpoint
+50 15
+exp_number: 19
+og_number:  70
+has_checkpoint
+75 10
+has_checkpoint
+10 120
+exp_number: 20
+og_number: 135
+does_not_have_checkpoint
+exp_number: 20
+og_number: 140
+has_checkpoint
+20 50
+has_checkpoint
+100 150
+exp_number: 20
+og_number: 145
+has_checkpoint
+95 147
+has_checkpoint
+20 50
+exp_number: 20
+og_number: 169
+does_not_have_checkpoint
+exp_number: 20
+og_number: 171
+does_not_have_checkpoint
+exp_number: 20
+og_number: 174
+does_not_have_checkpoint
+exp_number: 20
+og_number: 199
+does_not_have_checkpoint
+exp_number: 23
+og_number:  81
+has_checkpoint
+135 150
+has_checkpoint
+20 70
+has_checkpoint
+135 10
+exp_number: 23
+og_number:  90
+has_checkpoint
+13 80
+has_checkpoint
+75 14
+has_checkpoint
+85 150
+exp_number: 24
+og_number: 103
+has_checkpoint
+100 145
+has_checkpoint
+90 10
+has_checkpoint
+10 85
+$
