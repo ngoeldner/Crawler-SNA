@@ -8,7 +8,7 @@ O modelo de distorção usado é o modelo de Brown-Conrady. Deve-se selecionar a
 o resultado será salvo em `../correct_nano_ogs/new_ogs/`. 
 
 [**`occupancy_grid_correct_nano_ogs_test_pitch.cpp`**](./occupancy_grid_correct_nano_ogs_test_pitch.cpp) serve para auxiliar o ajuste manual
-do ângulo do pitch da câmera. Deve-se fazer uma marcação no chão e ajustar as faixas vermelhas para a sua posi<>ão real considerando o pitch desejado.
+do ângulo do pitch da câmera. Deve-se fazer uma marcação no chão e ajustar as faixas vermelhas para a sua posição real considerando o pitch desejado.
 Deve-se selecionar alguma imagem presente em `../correct_nano_ogs/imgs/` e
 o resultado será salvo em `../correct_nano_ogs/new_ogs/`.
 
