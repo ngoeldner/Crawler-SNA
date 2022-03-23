@@ -7,7 +7,7 @@
 
 // file
 int exp_number = 18;
-int img_number = 96;
+int img_number = 83;
 
 // occupancy grid
 // double cam_height  = -45.5;

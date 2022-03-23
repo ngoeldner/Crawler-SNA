@@ -6,7 +6,7 @@
 #include <utility>
 
 // file
-int exp_number = 31;
+int exp_number = 10;
 int img_number = 1;
 
 // occupancy grid
