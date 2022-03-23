@@ -6,13 +6,13 @@
 #include <utility>
 
 // file
-int exp_number = 10;
-int img_number = 1;
+int exp_number = 39;
+int img_number = 10;
 
 // occupancy grid
 // double cam_height  = -45.5;
 double cam_height  = -(104.5 + 1.5 + 24); //why -?
-double cam_angle = 14.0;
+double cam_angle = 10;
 // double cam_angle = 17.5;
 double x_grid_size = 800;
 // double x_grid_size = 200;
