@@ -15,6 +15,8 @@ Para visualizar os resultados presentes em `skel_gs_results` e `solution_paths` 
 As imagens geradas serão salvas nas pastas 
 [**`visualize_skel_gs_results`**](./visualize_skel_gs_results) e [**`visualize_plan_results`**](./visualize_plan_results).
 
+Deixamos nas pastas `skel_gs_results`, `solution_paths`, `visualize_skel_gs_results` e `visualize_plan_results` alguns exemplos de resultados.
+
 Para realizar algum teste sem a Nano presente, podemos simular seu comportamento usando o arquivo 
 [**`client_send_ogs_checkpoints.cpp`**](./client_send_ogs_checkpoints.cpp). Esse arquivo envia occupancy grids da mesma forma que a Nano os envia, 
 a diferença é que esse arquivo lê occupancy grids já gerados (não os gera). O tempo de espera entre envios de occupancy grids pode ser mudado no código. 
