@@ -1,0 +1,3640 @@
+OMPL version 
+Experiment RRT_TEST
+0 experiment properties
+Running on ngoeldner
+Starting at 2022-03-17 02:03:10
+<<<|
+Properties of the state space 'SE2CompoundSpace3'
+  - signature: 6 4 3 1 2 2 1 
+  - dimension: 3
+  - extent: 1320.04
+  - sanity checks for state space passed
+  - probability of valid states: 0.544
+  - average length of a valid motion: 365.102
+  - average number of samples drawn per second: sampleUniform()=1.13758e+07 sampleUniformNear()=1.17654e+07 sampleGaussian()=5.20983e+06
+Settings for the state space 'SE2CompoundSpace3'
+  - state validity check resolution: 0.378777%
+  - valid segment count factor: 1
+  - state space:
+Compound state space 'SE2CompoundSpace3' of dimension 3 (locked) [
+Real vector state space 'RealVectorSpace4' of dimension 2 with bounds: 
+  - min: -400 -50 
+  - max: 400 1000 
+ of weight 1
+SO2 state space 'SO2Space5'
+ of weight 0
+]
+Registered projections:
+  - <default>
+Projection of dimension 2
+Cell sizes (computed defaults): [40 52.5]
+
+Declared parameters:
+longest_valid_segment_fraction = 0.00378777
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+valid_segment_count_factor = 1
+Valid state sampler named uniform with parameters:
+nr_attempts = 100
+Planner LBKPIECE1 specs:
+Multithreaded:                 No
+Reports approximate solutions: No
+Can optimize solutions:        No
+Aware of the following parameters: border_fraction min_valid_path_fraction range
+Declared parameters for planner LBKPIECE1:
+border_fraction = 0.9
+min_valid_path_fraction = 0.5
+range = 264.008
+Start states:
+Compound state [
+RealVectorState [0 -50]
+SO2State [1.5708]
+]
+Goal state, threshold = 5, memory address = 0x55c42220d4d0, state = 
+Compound state [
+RealVectorState [325 575]
+SO2State [0.191184]
+]
+Optimization Objective: Path Length @0x55c42220f9e0
+Optimization Threshold: 950
+Average state cost: 0
+There are 0 solutions
+
+Properties of benchmarked planners:
+Planner RRTg range=50.00 intermediate_states=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias intermediate_states range
+Planner RRTg range=100.00 intermediate_states=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias intermediate_states range
+Planner RRTg range=250.00 intermediate_states=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias intermediate_states range
+Planner RRTg range=500.00 intermediate_states=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias intermediate_states range
+Planner RRTg range=1320.04 intermediate_states=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias intermediate_states range
+Planner RRTg range=50.00 intermediate_states=1.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias intermediate_states range
+Planner RRTg range=100.00 intermediate_states=1.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias intermediate_states range
+Planner RRTg range=250.00 intermediate_states=1.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias intermediate_states range
+Planner RRTg range=500.00 intermediate_states=1.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias intermediate_states range
+Planner RRTg range=1320.04 intermediate_states=1.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias intermediate_states range
+Planner RRTstar new_state_rejection=0.00 range=50.00 rewire_factor=1.05 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=50.00 rewire_factor=1.10 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=50.00 rewire_factor=1.50 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=50.00 rewire_factor=2.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=50.00 rewire_factor=5.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=100.00 rewire_factor=1.05 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=100.00 rewire_factor=1.10 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=100.00 rewire_factor=1.50 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=100.00 rewire_factor=2.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=100.00 rewire_factor=5.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=250.00 rewire_factor=1.05 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=250.00 rewire_factor=1.10 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=250.00 rewire_factor=1.50 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=250.00 rewire_factor=2.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=250.00 rewire_factor=5.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=500.00 rewire_factor=1.05 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=500.00 rewire_factor=1.10 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=500.00 rewire_factor=1.50 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=500.00 rewire_factor=2.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=500.00 rewire_factor=5.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=1320.04 rewire_factor=1.05 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=1320.04 rewire_factor=1.10 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=1320.04 rewire_factor=1.50 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=1320.04 rewire_factor=2.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=0.00 range=1320.04 rewire_factor=5.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=50.00 rewire_factor=1.05 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=50.00 rewire_factor=1.10 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=50.00 rewire_factor=1.50 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=50.00 rewire_factor=2.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=50.00 rewire_factor=5.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=100.00 rewire_factor=1.05 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=100.00 rewire_factor=1.10 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=100.00 rewire_factor=1.50 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=100.00 rewire_factor=2.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=100.00 rewire_factor=5.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=250.00 rewire_factor=1.05 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=250.00 rewire_factor=1.10 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=250.00 rewire_factor=1.50 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=250.00 rewire_factor=2.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=250.00 rewire_factor=5.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=500.00 rewire_factor=1.05 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=500.00 rewire_factor=1.10 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=500.00 rewire_factor=1.50 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=500.00 rewire_factor=2.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=500.00 rewire_factor=5.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=1320.04 rewire_factor=1.05 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=1320.04 rewire_factor=1.10 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=1320.04 rewire_factor=1.50 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=1320.04 rewire_factor=2.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+Planner RRTstar new_state_rejection=1.00 range=1320.04 rewire_factor=5.00 delay_collision_checking=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        Yes
+Aware of the following parameters: delay_collision_checking focus_search goal_bias informed_sampling new_state_rejection number_sampling_attempts ordered_sampling ordering_batch_size prune_threshold pruned_measure range rewire_factor sample_rejection tree_pruning use_admissible_heuristic use_k_nearest
+|>>>
+<<<|
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Byte Order:                      Little Endian
+Address sizes:                   39 bits physical, 48 bits virtual
+CPU(s):                          8
+On-line CPU(s) list:             0-7
+Thread(s) per core:              2
+Core(s) per socket:              4
+Socket(s):                       1
+NUMA node(s):                    1
+Vendor ID:                       GenuineIntel
+CPU family:                      6
+Model:                           142
+Model name:                      Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+Stepping:                        10
+CPU MHz:                         2723.658
+CPU max MHz:                     4000,0000
+CPU min MHz:                     400,0000
+BogoMIPS:                        3999.93
+Virtualization:                  VT-x
+L1d cache:                       128 KiB
+L1i cache:                       128 KiB
+L2 cache:                        1 MiB
+L3 cache:                        8 MiB
+NUMA node0 CPU(s):               0-7
+Vulnerability Itlb multihit:     KVM: Vulnerable
+Vulnerability L1tf:              Mitigation; PTE Inversion
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Full generic retpoline, IBRS_FW, STIBP conditional, RSB filling
+Vulnerability Srbds:             Mitigation; Microcode
+Vulnerability Tsx async abort:   Not affected
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+|>>>
+10870865424555798 is the random seed
+1 seconds per run
+4096 MB per run
+5 runs per planner
+2.45014 seconds spent to collect the data
+1 enum type
+status|Unknown status|Invalid start|Invalid goal|Unrecognized goal type|Timeout|Approximate solution|Exact solution|Crash|Unknown status
+60 planners
+geometric_RRTg range=50.00 intermediate_states=0.00
+8 common properties
+goal_bias = 0.05
+intermediate_states = 0
+longest_valid_segment_fraction = 0.00378777
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+range = 50
+valid_segment_count_factor = 1
+15 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 1; 74; 75; 16.793; 0; 0; 1194.42; 24; 0.00599785; 1; 6; 0.00122556; 0.72549; 
+0; 1; 1; 43; 44; 16.793; 0; 0; 1070.02; 22; 0.00634906; 1; 6; 0.00122122; 0.895833; 
+0; 1; 1; 68; 69; 16.793; 0; 0; 1078.92; 22; 0.00319519; 1; 6; 0.000718554; 0.819277; 
+0; 1; 1; 51; 52; 16.793; 0; 0; 900; 18; 0.00262152; 1; 6; 0.00135338; 0.927273; 
+0; 1; 1; 71; 72; 16.793; 0; 0; 812.259; 17; 0.00326898; 1; 6; 0.00119754; 0.835294; 
+.
+geometric_RRTg range=100.00 intermediate_states=0.00
+8 common properties
+goal_bias = 0.05
+intermediate_states = 0
+longest_valid_segment_fraction = 0.00378777
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+range = 100
+valid_segment_count_factor = 1
+15 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 1; 37; 38; 16.793; 0; 0; 952.289; 11; 0.0017585; 1; 6; 0.00117042; 0.711538; 
+0; 1; 1; 38; 39; 16.793; 0; 0; 1192.13; 13; 0.00194412; 1; 6; 0.0012232; 0.666667; 
+0; 1; 1; 50; 51; 16.793; 0; 0; 949.426; 10; 0.00245048; 1; 6; 0.00127062; 0.561798; 
+0; 1; 1; 71; 72; 16.793; 0; 0; 1049.86; 11; 0.000917186; 1; 6; 0.00117521; 0.68932; 
+0; 1; 1; 50; 51; 16.793; 0; 0; 1099.97; 12; 0.000981912; 1; 6; 0.00116713; 0.684932; 
+.
+geometric_RRTg range=250.00 intermediate_states=0.00
+8 common properties
+goal_bias = 0.05
+intermediate_states = 0
+longest_valid_segment_fraction = 0.00378777
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+range = 250
+valid_segment_count_factor = 1
+15 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 1; 7; 8; 16.793; 0; 0; 969.722; 4; 3.51086e-05; 1; 6; 0.00123718; 0.875; 
+0; 1; 1; 6; 7; 16.793; 0; 0; 1075.28; 5; 0.000132375; 1; 6; 0.00117226; 0.75; 
+0; 1; 1; 39; 40; 16.793; 0; 0; 960.473; 5; 0.000466628; 1; 6; 0.0011285; 0.661017; 
+0; 1; 1; 40; 41; 16.793; 0; 0; 855.498; 5; 0.000742871; 1; 6; 0.00116995; 0.512821; 
+0; 1; 1; 21; 22; 16.793; 0; 0; 1139.28; 7; 0.000467606; 1; 6; 0.00123217; 0.6; 
+.
+geometric_RRTg range=500.00 intermediate_states=0.00
+8 common properties
+goal_bias = 0.05
+intermediate_states = 0
+longest_valid_segment_fraction = 0.00378777
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+range = 500
+valid_segment_count_factor = 1
+15 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 1; 2; 3; 16.793; 0; 0; 929.426; 2; 9.41977e-06; 1; 6; 0.0011863; 0.666667; 
+0; 1; 1; 23; 24; 16.793; 0; 0; 918.367; 3; 9.67929e-06; 1; 6; 0.00113517; 0.560976; 
+0; 1; 1; 16; 17; 16.793; 0; 0; 1490.73; 5; 0.000502159; 1; 6; 0.00120377; 0.666667; 
+0; 1; 1; 3; 4; 16.793; 0; 0; 1164.76; 3; 3.9728e-05; 1; 6; 0.00118861; 0.75; 
+0; 1; 1; 16; 17; 16.793; 0; 0; 1280.75; 6; 0.000547031; 1; 6; 0.00117543; 0.727273; 
+.
+geometric_RRTg range=1320.04 intermediate_states=0.00
+8 common properties
+goal_bias = 0.05
+intermediate_states = 0
+longest_valid_segment_fraction = 0.00378777
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+range = 1320.04
+valid_segment_count_factor = 1
+15 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 1; 6; 7; 16.793; 0; 0; 900.322; 3; 7.03324e-05; 1; 6; 0.0011809; 0.545455; 
+0; 1; 1; 28; 29; 16.793; 0; 0; 1557.32; 6; 0.000727861; 1; 6; 0.00116183; 0.608696; 
+0; 1; 1; 40; 41; 16.793; 0; 0; 1171.59; 5; 0.000389867; 1; 6; 0.00119912; 0.634921; 
+0; 1; 1; 9; 10; 16.793; 0; 0; 721.403; 3; 4.38893e-05; 1; 6; 0.00116921; 0.473684; 
+0; 1; 1; 10; 11; 16.793; 0; 0; 1006.28; 2; 2.84781e-05; 1; 6; 0.00115049; 0.454545; 
+.
+geometric_RRTg range=50.00 intermediate_states=1.00
+8 common properties
+goal_bias = 0.05
+intermediate_states = 1
+longest_valid_segment_fraction = 0.00378777
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+range = 50
+valid_segment_count_factor = 1
+15 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 1; 3876; 3877; 16.793; 0; 0; 1280.66; 884; 2.35087; 1; 6; 0.00856971; 0.769231; 
+0; 1; 1; 2240; 2241; 16.793; 0; 0; 880.184; 495; 2.04486; 1; 6; 0.00546819; 0.959184; 
+0; 1; 1; 2280; 2281; 16.793; 0; 0; 1014.29; 924; 12.8692; 1; 6; 0.00554351; 0.930233; 
+0; 1; 1; 4199; 4200; 16.793; 0; 0; 834.647; 401; 3.94946; 1; 6; 0.00672376; 0.787234; 
+0; 1; 1; 3801; 3802; 16.793; 0; 0; 897.055; 405; 4.39758; 1; 6; 0.00564674; 0.804878; 
+.
+geometric_RRTg range=100.00 intermediate_states=1.00
+8 common properties
+goal_bias = 0.05
+intermediate_states = 1
+longest_valid_segment_fraction = 0.00378777
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+range = 100
+valid_segment_count_factor = 1
+15 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 1; 3633; 3634; 16.793; 0; 0; 1054.73; 664; 0.575466; 1; 6; 0.00667658; 0.829787; 
+0; 1; 1; 1975; 1976; 16.793; 0; 0; 1100; 890; 2.50756; 1; 6; 0.00452397; 0.793103; 
+0; 1; 1; 3476; 3477; 16.793; 0; 0; 976.314; 1233; 15.2674; 1; 6; 0.00546259; 0.767442; 
+0; 1; 1; 1582; 1583; 16.793; 0; 0; 821.805; 248; 0.550262; 1; 6; 0.00344217; 0.766667; 
+0; 1; 1; 2241; 2242; 16.793; 0; 0; 940.517; 486; 2.06494; 1; 6; 0.00336756; 0.777778; 
+.
+geometric_RRTg range=250.00 intermediate_states=1.00
+8 common properties
+goal_bias = 0.05
+intermediate_states = 1
+longest_valid_segment_fraction = 0.00378777
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+range = 250
+valid_segment_count_factor = 1
+15 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 1; 1660; 1661; 16.793; 0; 0; 865.844; 365; 0.0736989; 1; 6; 0.00226198; 0.466667; 
+0; 1; 1; 1144; 1145; 16.793; 0; 0; 1083.11; 355; 0.406061; 1; 6; 0.00232453; 0.545455; 
+0; 1; 1; 2263; 2264; 16.793; 0; 0; 813.549; 487; 2.9039; 1; 6; 0.00338963; 0.541667; 
+0; 1; 1; 3710; 3711; 16.793; 0; 0; 833.271; 595; 5.21546; 1; 6; 0.00651712; 0.634146; 
+0; 1; 1; 5190; 5191; 16.793; 0; 0; 1579.94; 1353; 31.3087; 1; 6; 0.0087814; 0.513158; 
+.
+geometric_RRTg range=500.00 intermediate_states=1.00
+8 common properties
+goal_bias = 0.05
+intermediate_states = 1
+longest_valid_segment_fraction = 0.00378777
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+range = 500
+valid_segment_count_factor = 1
+15 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 1; 628; 629; 16.793; 0; 0; 754.316; 190; 0.473393; 1; 6; 0.00121894; 0.857143; 
+0; 1; 1; 208; 209; 16.793; 0; 0; 918.947; 208; 0.097082; 1; 6; 0.00116012; 1; 
+0; 1; 1; 417; 418; 16.793; 0; 0; 837.553; 417; 0.0667679; 1; 6; 0.00118447; 1; 
+0; 1; 1; 325; 326; 16.793; 0; 0; 1108.4; 314; 0.243047; 1; 6; 0.00119408; 0.75; 
+0; 1; 1; 1689; 1690; 16.793; 0; 0; 743.687; 482; 3.03196; 1; 6; 0.00335706; 0.588235; 
+.
+geometric_RRTg range=1320.04 intermediate_states=1.00
+8 common properties
+goal_bias = 0.05
+intermediate_states = 1
+longest_valid_segment_fraction = 0.00378777
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+range = 1320.04
+valid_segment_count_factor = 1
+15 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 1; 260; 261; 16.793; 0; 0; 958.886; 250; 0.168124; 1; 6; 0.00122119; 0.5; 
+0; 1; 1; 1260; 1261; 16.793; 0; 0; 999.401; 365; 0.516667; 1; 6; 0.00227474; 0.8; 
+0; 1; 1; 566; 567; 16.793; 0; 0; 996.127; 414; 0.796315; 1; 6; 0.00123258; 0.625; 
+0; 1; 1; 169; 170; 16.793; 0; 0; 760.122; 169; 0.0294585; 1; 6; 0.00119914; 0.5; 
+0; 1; 1; 857; 858; 16.793; 0; 0; 867.242; 449; 0.493045; 1; 6; 0.00223664; 0.636364; 
+.
+geometric_RRTstar new_state_rejection=0.00 range=50.00 rewire_factor=1.05 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 50
+rewire_factor = 1.05
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 819.721669; 1; 1; 50; 51; 52; 16.793; 0; 0; 819.722; 17; 0.00229217; 1; 6; 0.000909781; 0.963636; 
+0; 895.901250; 1; 1; 329; 330; 541; 16.793; 0; 0; 895.901; 21; 0.00422755; 1; 6; 0.022688; 0.747919; 
+0; 917.356043; 1; 1; 87; 88; 120; 16.793; 0; 0; 917.356; 19; 0.00322068; 1; 6; 0.00674882; 0.75188; 
+0; 949.996752; 1; 1; 175; 176; 277; 16.793; 0; 0; 949.997; 22; 0.00310535; 1; 6; 0.00731308; 0.703488; 
+0; 850.000000; 1; 1; 54; 55; 61; 16.793; 0; 0; 850; 17; 0.00548133; 1; 6; 0.00235455; 0.890625; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=50.00 rewire_factor=1.10 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 50
+rewire_factor = 1.1
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 847.073166; 1; 1; 318; 319; 547; 16.793; 0; 0; 847.073; 21; 0.00966151; 1; 6; 0.0250686; 0.724221; 
+0; 863.363427; 1; 1; 443; 444; 749; 16.793; 0; 0; 863.363; 22; 0.00640826; 1; 6; 0.0459624; 0.758782; 
+0; 841.879847; 1; 1; 58; 59; 75; 16.793; 0; 0; 841.88; 17; 0.00453799; 1; 6; 0.00278144; 0.78481; 
+0; 818.988948; 1; 1; 57; 58; 73; 16.793; 0; 0; 818.989; 17; 0.0040465; 1; 6; 0.00234959; 0.786667; 
+0; 877.646453; 1; 1; 74; 75; 94; 16.793; 0; 0; 877.646; 18; 0.00188485; 1; 6; 0.0124885; 0.79798; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=50.00 rewire_factor=1.50 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 50
+rewire_factor = 1.5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 940.878306; 1; 1; 91; 92; 131; 16.793; 0; 0; 940.878; 20; 0.00476964; 1; 6; 0.00784786; 0.731544; 
+0; 823.070800; 1; 1; 67; 68; 93; 16.793; 0; 0; 823.071; 17; 0.00218295; 1; 6; 0.00232261; 0.731959; 
+0; 936.759350; 1; 1; 154; 155; 218; 16.793; 0; 0; 936.759; 21; 0.00759903; 1; 6; 0.00881482; 0.775439; 
+0; 847.875643; 1; 1; 77; 78; 91; 16.793; 0; 0; 847.876; 18; 0.00482851; 1; 6; 0.0030057; 0.867925; 
+0; 900.608175; 1; 1; 45; 46; 46; 16.793; 0; 0; 900.608; 19; 0.00457082; 1; 6; 0.00106764; 0.98; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=50.00 rewire_factor=2.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 50
+rewire_factor = 2
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 744.435311; 1; 1; 48; 49; 51; 16.793; 0; 0; 744.435; 15; 0.0014736; 1; 6; 0.00780504; 0.944444; 
+0; 926.488283; 1; 1; 359; 360; 603; 16.793; 0; 0; 926.488; 24; 0.0129909; 1; 6; 0.0275169; 0.744259; 
+0; 941.218783; 1; 1; 430; 431; 792; 16.793; 0; 0; 941.219; 25; 0.0162439; 1; 6; 0.0292083; 0.723875; 
+0; 923.290452; 1; 1; 350; 351; 577; 16.793; 0; 0; 923.29; 21; 0.00761475; 1; 6; 0.0192754; 0.739679; 
+0; 941.902650; 1; 1; 65; 66; 74; 16.793; 0; 0; 941.903; 20; 0.00358051; 1; 6; 0.00124522; 0.888889; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=50.00 rewire_factor=5.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 50
+rewire_factor = 5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 827.545568; 1; 1; 71; 72; 81; 16.793; 0; 0; 827.546; 17; 0.00242454; 1; 6; 0.0011686; 0.883721; 
+0; 813.111698; 1; 1; 99; 100; 140; 16.793; 0; 0; 813.112; 18; 0.00288276; 1; 6; 0.00227396; 0.748466; 
+0; 877.337903; 1; 1; 85; 86; 115; 16.793; 0; 0; 877.338; 18; 0.00419128; 1; 6; 0.00221053; 0.779412; 
+0; 885.114718; 1; 1; 318; 319; 563; 16.793; 0; 0; 885.115; 21; 0.0045886; 1; 6; 0.0162783; 0.719037; 
+0; 924.761279; 1; 1; 188; 189; 280; 16.793; 0; 0; 924.761; 22; 0.0119999; 1; 6; 0.00655684; 0.754011; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=100.00 rewire_factor=1.05 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 100
+rewire_factor = 1.05
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 806.864089; 1; 1; 18; 19; 19; 16.793; 0; 0; 806.864; 9; 0.000352598; 1; 6; 0.00120087; 0.954545; 
+0; 895.110535; 1; 1; 80; 81; 137; 16.793; 0; 0; 895.111; 10; 0.000815398; 1; 6; 0.00225651; 0.709184; 
+0; 888.004147; 1; 1; 27; 28; 40; 16.793; 0; 0; 888.004; 10; 0.000911562; 1; 6; 0.00117203; 0.717391; 
+0; 906.223878; 1; 1; 27; 28; 34; 16.793; 0; 0; 906.224; 10; 0.000611046; 1; 6; 0.0011756; 0.810811; 
+0; 858.615236; 1; 1; 168; 169; 285; 16.793; 0; 0; 858.615; 13; 0.00100166; 1; 6; 0.00776437; 0.784133; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=100.00 rewire_factor=1.10 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 100
+rewire_factor = 1.1
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 844.162483; 1; 1; 37; 38; 47; 16.793; 0; 0; 844.162; 10; 0.000503873; 1; 6; 0.00123896; 0.833333; 
+0; 927.065506; 1; 1; 38; 39; 48; 16.793; 0; 0; 927.066; 10; 0.000961951; 1; 6; 0.00116983; 0.818182; 
+0; 770.841758; 1; 1; 17; 18; 19; 16.793; 0; 0; 770.842; 8; 0.000103669; 1; 6; 0.00116585; 0.894737; 
+0; 925.964457; 1; 1; 20; 21; 24; 16.793; 0; 0; 925.964; 10; 0.000890097; 1; 6; 0.00118355; 0.84; 
+0; 925.599962; 1; 1; 105; 106; 160; 16.793; 0; 0; 925.6; 11; 0.000608213; 1; 6; 0.00444015; 0.804965; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=100.00 rewire_factor=1.50 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 100
+rewire_factor = 1.5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 832.008276; 1; 1; 23; 24; 34; 16.793; 0; 0; 832.008; 9; 0.000730745; 1; 6; 0.00117145; 0.676471; 
+0; 851.993331; 1; 1; 139; 140; 228; 16.793; 0; 0; 851.993; 11; 0.00205368; 1; 6; 0.00541183; 0.779156; 
+0; 914.934433; 1; 1; 83; 84; 110; 16.793; 0; 0; 914.934; 11; 0.00063379; 1; 6; 0.00439276; 0.848315; 
+0; 760.512532; 1; 1; 43; 44; 59; 16.793; 0; 0; 760.513; 8; 0.000300276; 1; 6; 0.00225271; 0.794872; 
+0; 861.804580; 1; 1; 35; 36; 42; 16.793; 0; 0; 861.805; 10; 0.000922547; 1; 6; 0.00121034; 0.86; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=100.00 rewire_factor=2.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 100
+rewire_factor = 2
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 922.565271; 1; 1; 107; 108; 179; 16.793; 0; 0; 922.565; 11; 0.00105869; 1; 6; 0.00556497; 0.732342; 
+0; 815.675587; 1; 1; 200; 201; 356; 16.793; 0; 0; 815.676; 12; 0.00056124; 1; 6; 0.0119279; 0.782192; 
+0; 802.642567; 1; 1; 77; 78; 134; 16.793; 0; 0; 802.643; 10; 0.00143782; 1; 6; 0.00338897; 0.720588; 
+0; 931.383884; 1; 1; 84; 85; 131; 16.793; 0; 0; 931.384; 13; 0.00122656; 1; 6; 0.00333868; 0.771845; 
+0; 920.635378; 1; 1; 113; 114; 167; 16.793; 0; 0; 920.635; 13; 0.00120531; 1; 6; 0.00441078; 0.807692; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=100.00 rewire_factor=5.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 100
+rewire_factor = 5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 906.718541; 1; 1; 117; 118; 201; 16.793; 0; 0; 906.719; 11; 0.000685471; 1; 6; 0.00446829; 0.740741; 
+0; 904.685303; 1; 1; 114; 115; 173; 16.793; 0; 0; 904.685; 11; 0.000916593; 1; 6; 0.00439352; 0.80719; 
+0; 923.863446; 1; 1; 59; 60; 88; 16.793; 0; 0; 923.863; 11; 0.000835381; 1; 6; 0.00231226; 0.752137; 
+0; 856.811019; 1; 1; 26; 27; 32; 16.793; 0; 0; 856.811; 10; 0.000667473; 1; 6; 0.00122558; 0.833333; 
+0; 902.488653; 1; 1; 54; 55; 89; 16.793; 0; 0; 902.489; 10; 0.000681997; 1; 6; 0.00232498; 0.695652; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=250.00 rewire_factor=1.05 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 250
+rewire_factor = 1.05
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 814.636103; 1; 1; 19; 20; 30; 16.793; 0; 0; 814.636; 4; 6.3134e-05; 1; 6; 0.00122039; 0.78; 
+0; 834.491588; 1; 1; 5; 6; 6; 16.793; 0; 0; 834.492; 4; 1.87329e-05; 1; 6; 0.0017087; 0.833333; 
+0; 729.816559; 1; 1; 10; 11; 18; 16.793; 0; 0; 729.817; 3; 6.73743e-06; 1; 6; 0.0029005; 0.619048; 
+0; 785.878636; 1; 1; 16; 17; 30; 16.793; 0; 0; 785.879; 4; 1.17926e-05; 1; 6; 0.00369166; 0.65; 
+0; 779.402450; 1; 1; 15; 16; 18; 16.793; 0; 0; 779.402; 4; 2.35059e-05; 1; 6; 0.00120515; 0.911765; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=250.00 rewire_factor=1.10 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 250
+rewire_factor = 1.1
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 707.884781; 1; 1; 23; 24; 33; 16.793; 0; 0; 707.885; 4; 4.16247e-06; 1; 6; 0.00120875; 0.825397; 
+0; 758.290338; 1; 1; 29; 30; 35; 16.793; 0; 0; 758.29; 4; 1.44727e-05; 1; 6; 0.00240162; 0.914286; 
+0; 748.233769; 1; 1; 3; 4; 3; 16.793; 0; 0; 748.234; 3; 9.25277e-06; 1; 6; 0.000334634; 1; 
+0; 721.168737; 1; 1; 17; 18; 29; 16.793; 0; 0; 721.169; 4; 1.08241e-05; 1; 6; 0.00126462; 0.692308; 
+0; 820.800283; 1; 1; 16; 17; 30; 16.793; 0; 0; 820.8; 4; 5.24746e-05; 1; 6; 0.00120289; 0.658537; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=250.00 rewire_factor=1.50 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 250
+rewire_factor = 1.5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 897.894549; 1; 1; 10; 11; 13; 16.793; 0; 0; 897.895; 4; 6.76797e-05; 1; 6; 0.0012091; 0.8; 
+0; 792.182487; 1; 1; 13; 14; 17; 16.793; 0; 0; 792.182; 4; 4.09663e-05; 1; 6; 0.00122104; 0.826087; 
+0; 829.457664; 1; 1; 18; 19; 24; 16.793; 0; 0; 829.458; 4; 6.25453e-05; 1; 6; 0.00117362; 0.860465; 
+0; 853.514991; 1; 1; 18; 19; 27; 16.793; 0; 0; 853.515; 4; 4.66373e-05; 1; 6; 0.00129505; 0.790698; 
+0; 867.681033; 1; 1; 26; 27; 49; 16.793; 0; 0; 867.681; 4; 6.89967e-05; 1; 6; 0.00115863; 0.684932; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=250.00 rewire_factor=2.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 250
+rewire_factor = 2
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 751.232100; 1; 1; 13; 14; 15; 16.793; 0; 0; 751.232; 4; 2.99959e-05; 1; 6; 0.00117035; 0.916667; 
+0; 837.484057; 1; 1; 20; 21; 38; 16.793; 0; 0; 837.484; 4; 6.37264e-05; 1; 6; 0.00117554; 0.694915; 
+0; 722.109089; 1; 1; 6; 7; 8; 16.793; 0; 0; 722.109; 3; 3.91379e-06; 1; 6; 0.00118767; 0.8; 
+0; 832.716076; 1; 1; 31; 32; 52; 16.793; 0; 0; 832.716; 4; 4.33889e-05; 1; 6; 0.00221769; 0.755814; 
+0; 730.646301; 1; 1; 7; 8; 8; 16.793; 0; 0; 730.646; 4; 0.000179433; 1; 6; 0.00117796; 0.9; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=250.00 rewire_factor=5.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 250
+rewire_factor = 5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 787.131119; 1; 1; 9; 10; 14; 16.793; 0; 0; 787.131; 4; 2.62426e-05; 1; 6; 0.00118234; 0.666667; 
+0; 833.843108; 1; 1; 18; 19; 32; 16.793; 0; 0; 833.843; 5; 7.13631e-05; 1; 6; 0.00118549; 0.695652; 
+0; 718.816670; 1; 1; 21; 22; 36; 16.793; 0; 0; 718.817; 4; 8.58793e-06; 1; 6; 0.00116169; 0.736842; 
+0; 815.228819; 1; 1; 11; 12; 17; 16.793; 0; 0; 815.229; 4; 2.78869e-05; 1; 6; 0.00116881; 0.73913; 
+0; 714.791234; 1; 1; 10; 11; 15; 16.793; 0; 0; 714.791; 3; 4.39672e-06; 1; 6; 0.00126245; 0.75; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=500.00 rewire_factor=1.05 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 500
+rewire_factor = 1.05
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 704.450140; 1; 1; 5; 6; 7; 16.793; 0; 0; 704.45; 2; 0; 1; 6; 0.00556186; 0.777778; 
+0; 705.765980; 1; 1; 3; 4; 5; 16.793; 0; 0; 705.766; 2; 1.45057e-07; 1; 6; 0.00123442; 0.6; 
+0; 827.606648; 1; 1; 10; 11; 15; 16.793; 0; 0; 827.607; 2; 7.46283e-06; 1; 6; 0.000374597; 0.807692; 
+0; 704.450140; 1; 1; 5; 6; 5; 16.793; 0; 0; 704.45; 2; 0; 1; 6; 0.00118252; 1; 
+0; 760.732326; 1; 1; 11; 12; 15; 16.793; 0; 0; 760.732; 2; 4.2673e-06; 1; 6; 0.00115511; 0.821429; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=500.00 rewire_factor=1.10 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 500
+rewire_factor = 1.1
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 704.451138; 1; 1; 9; 10; 20; 16.793; 0; 0; 704.451; 2; 9.43885e-11; 1; 6; 0.00116601; 0.607143; 
+0; 717.989221; 1; 1; 9; 10; 17; 16.793; 0; 0; 717.989; 2; 1.28995e-06; 1; 6; 0.00122765; 0.7; 
+0; 715.461213; 1; 1; 9; 10; 24; 16.793; 0; 0; 715.461; 2; 1.00252e-06; 1; 6; 0.0012598; 0.516129; 
+0; 739.671470; 1; 1; 11; 12; 15; 16.793; 0; 0; 739.671; 3; 1.15961e-05; 1; 6; 0.00125785; 0.769231; 
+0; 793.914705; 1; 1; 4; 5; 6; 16.793; 0; 0; 793.915; 2; 6.29175e-06; 1; 6; 0.00122632; 0.666667; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=500.00 rewire_factor=1.50 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 500
+rewire_factor = 1.5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 704.642115; 1; 1; 30; 31; 52; 16.793; 0; 0; 704.642; 2; 1.75996e-08; 1; 6; 0.00122081; 0.772277; 
+0; 778.612979; 1; 1; 7; 8; 15; 16.793; 0; 0; 778.613; 3; 1.12496e-05; 1; 6; 0.00118706; 0.6; 
+0; 766.613415; 1; 1; 7; 8; 12; 16.793; 0; 0; 766.613; 2; 4.96335e-06; 1; 6; 0.00118164; 0.6; 
+0; 888.003451; 1; 1; 2; 3; 3; 16.793; 0; 0; 888.003; 2; 8.70444e-06; 1; 6; 0.00123271; 0.666667; 
+0; 717.201976; 1; 1; 4; 5; 9; 16.793; 0; 0; 717.202; 2; 1.1508e-06; 1; 6; 0.0012026; 0.444444; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=500.00 rewire_factor=2.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 500
+rewire_factor = 2
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 710.914173; 1; 1; 4; 5; 6; 16.793; 0; 0; 710.914; 2; 6.91651e-07; 1; 6; 0.0012473; 0.714286; 
+0; 765.987174; 1; 1; 6; 7; 18; 16.793; 0; 0; 765.987; 2; 4.61951e-06; 1; 6; 0.00125359; 0.428571; 
+0; 711.975589; 1; 1; 21; 22; 38; 16.793; 0; 0; 711.976; 2; 7.74693e-07; 1; 6; 0.00127302; 0.735294; 
+0; 704.853997; 1; 1; 12; 13; 23; 16.793; 0; 0; 704.854; 2; 3.97576e-08; 1; 6; 0.00127677; 0.641026; 
+0; 713.388489; 1; 1; 7; 8; 12; 16.793; 0; 0; 713.388; 2; 8.13447e-07; 1; 6; 0.00126786; 0.705882; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=500.00 rewire_factor=5.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 500
+rewire_factor = 5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 946.106176; 1; 1; 6; 7; 11; 16.793; 0; 0; 946.106; 2; 9.58695e-06; 1; 6; 0.00118197; 0.6875; 
+0; 797.805425; 1; 1; 4; 5; 6; 16.793; 0; 0; 797.805; 2; 6.13391e-06; 1; 6; 0.00123645; 0.777778; 
+0; 763.536804; 1; 1; 7; 8; 14; 16.793; 0; 0; 763.537; 2; 4.71215e-06; 1; 6; 0.00126041; 0.65; 
+0; 704.450140; 1; 1; 13; 14; 20; 16.793; 0; 0; 704.45; 2; 0; 1; 6; 0.00127246; 0.8; 
+0; 877.787388; 1; 1; 2; 3; 2; 16.793; 0; 0; 877.787; 2; 8.68201e-06; 1; 6; 0.00133265; 1; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=1320.04 rewire_factor=1.05 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 1320.04
+rewire_factor = 1.05
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 704.450140; 1; 1; 18; 19; 36; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.0011887; 0.690141; 
+0; 704.450140; 1; 1; 8; 9; 12; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00122561; 0.73913; 
+0; 704.450140; 1; 1; 70; 71; 119; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00336569; 0.768489; 
+0; 704.450140; 1; 1; 5; 6; 8; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.0012406; 0.733333; 
+0; 704.450140; 1; 1; 5; 6; 7; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00124679; 0.727273; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=1320.04 rewire_factor=1.10 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 1320.04
+rewire_factor = 1.1
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 704.450140; 1; 1; 11; 12; 34; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00126987; 0.466667; 
+0; 704.450140; 1; 1; 9; 10; 15; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00115117; 0.72; 
+0; 704.450140; 1; 1; 19; 20; 40; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00123029; 0.651163; 
+0; 704.450140; 1; 1; 4; 5; 5; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00120996; 0.857143; 
+0; 704.450140; 1; 1; 11; 12; 20; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00126302; 0.769231; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=1320.04 rewire_factor=1.50 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 1320.04
+rewire_factor = 1.5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 704.450140; 1; 1; 18; 19; 33; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00122622; 0.716418; 
+0; 704.450140; 1; 1; 5; 6; 6; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00119752; 0.769231; 
+0; 704.450140; 1; 1; 21; 22; 46; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00121551; 0.689655; 
+0; 704.450140; 1; 1; 19; 20; 29; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00120994; 0.785714; 
+0; 704.450140; 1; 1; 12; 13; 23; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00118433; 0.697674; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=1320.04 rewire_factor=2.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 1320.04
+rewire_factor = 2
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 704.450140; 1; 1; 27; 28; 41; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00125441; 0.857143; 
+0; 704.450140; 1; 1; 11; 12; 22; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00116453; 0.710526; 
+0; 704.450140; 1; 1; 12; 13; 24; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00126234; 0.641026; 
+0; 704.450140; 1; 1; 4; 5; 5; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.0013064; 0.75; 
+0; 704.450140; 1; 1; 4; 5; 8; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00125383; 0.666667; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=0.00 range=1320.04 rewire_factor=5.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 0
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 1320.04
+rewire_factor = 5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 704.450140; 1; 1; 19; 20; 38; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00120771; 0.702381; 
+0; 704.450140; 1; 1; 2; 3; 6; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00119779; 0.428571; 
+0; 704.450140; 1; 1; 11; 12; 15; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00117517; 0.833333; 
+0; 704.450140; 1; 1; 1; 2; 2; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.0012451; 0.5; 
+0; 704.450140; 1; 1; 1; 2; 1; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00123041; 1; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=50.00 rewire_factor=1.05 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 50
+rewire_factor = 1.05
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 800.000000; 1; 1; 58; 59; 69; 16.793; 0; 0; 800; 16; 0.00255434; 1; 6; 0.0011661; 0.851351; 
+0; 827.533257; 1; 1; 121; 122; 157; 16.793; 0; 0; 827.533; 18; 0.00511665; 1; 6; 0.00333254; 0.810526; 
+0; 866.145222; 1; 1; 64; 65; 78; 16.793; 0; 0; 866.145; 18; 0.00256649; 1; 6; 0.00122948; 0.835294; 
+0; 900.000000; 1; 1; 29; 30; 29; 16.793; 0; 0; 900; 18; 0.00377641; 1; 6; 0.00122673; 1; 
+0; 853.067057; 1; 1; 68; 69; 80; 16.793; 0; 0; 853.067; 18; 0.0041832; 1; 6; 0.00119254; 0.869565; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=50.00 rewire_factor=1.10 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 50
+rewire_factor = 1.1
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 915.349162; 1; 1; 72; 73; 85; 16.793; 0; 0; 915.349; 19; 0.00399689; 1; 6; 0.0012117; 0.853933; 
+0; 849.121613; 1; 1; 70; 71; 85; 16.793; 0; 0; 849.122; 17; 0.00402099; 1; 6; 0.00118121; 0.835165; 
+0; 832.751993; 1; 1; 312; 313; 654; 16.793; 0; 0; 832.752; 20; 0.00928237; 1; 6; 0.0218621; 0.803445; 
+0; 936.915683; 1; 1; 91; 92; 120; 16.793; 0; 0; 936.916; 19; 0.00503543; 1; 6; 0.00228259; 0.781955; 
+0; 939.676470; 1; 1; 270; 271; 632; 16.793; 0; 0; 939.676; 22; 0.00468778; 1; 6; 0.0174719; 0.734873; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=50.00 rewire_factor=1.50 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 50
+rewire_factor = 1.5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 885.080641; 1; 1; 225; 226; 525; 16.793; 0; 0; 885.081; 20; 0.00328639; 1; 6; 0.0119576; 0.726902; 
+0; 754.698635; 1; 1; 65; 66; 71; 16.793; 0; 0; 754.699; 16; 0.00190683; 1; 6; 0.00127431; 0.924051; 
+0; 896.411571; 1; 1; 262; 263; 493; 16.793; 0; 0; 896.412; 23; 0.00515228; 1; 6; 0.0139535; 0.749307; 
+0; 942.053276; 1; 1; 263; 264; 596; 16.793; 0; 0; 942.053; 23; 0.00378254; 1; 6; 0.0151394; 0.711806; 
+0; 944.863573; 1; 1; 235; 236; 548; 16.793; 0; 0; 944.864; 21; 0.00425481; 1; 6; 0.0143098; 0.699329; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=50.00 rewire_factor=2.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 50
+rewire_factor = 2
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 908.063078; 1; 1; 85; 86; 114; 16.793; 0; 0; 908.063; 19; 0.0036924; 1; 6; 0.00230423; 0.768; 
+0; 819.407427; 1; 1; 80; 81; 102; 16.793; 0; 0; 819.407; 17; 0.0015712; 1; 6; 0.00232892; 0.798165; 
+0; 943.064418; 1; 1; 266; 267; 496; 16.793; 0; 0; 943.064; 22; 0.00754585; 1; 6; 0.0178066; 0.762943; 
+0; 846.537935; 1; 1; 77; 78; 104; 16.793; 0; 0; 846.538; 17; 0.0037405; 1; 6; 0.00349743; 0.756757; 
+0; 900.000000; 1; 1; 51; 52; 59; 16.793; 0; 0; 900; 18; 0.00401348; 1; 6; 0.0013122; 0.868852; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=50.00 rewire_factor=5.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 50
+rewire_factor = 5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 934.756633; 1; 1; 61; 62; 82; 16.793; 0; 0; 934.757; 20; 0.0056251; 1; 6; 0.00122754; 0.771739; 
+0; 944.230685; 1; 1; 106; 107; 190; 16.793; 0; 0; 944.231; 20; 0.00410677; 1; 6; 0.0047024; 0.766816; 
+0; 891.072380; 1; 1; 56; 57; 65; 16.793; 0; 0; 891.072; 18; 0.00376922; 1; 6; 0.0012084; 0.867647; 
+0; 932.486975; 1; 1; 62; 63; 77; 16.793; 0; 0; 932.487; 19; 0.00555424; 1; 6; 0.00228488; 0.8125; 
+0; 821.237503; 1; 1; 324; 325; 674; 16.793; 0; 0; 821.238; 23; 0.00688394; 1; 6; 0.0368758; 0.754572; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=100.00 rewire_factor=1.05 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 100
+rewire_factor = 1.05
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 839.524328; 1; 1; 98; 99; 182; 16.793; 0; 0; 839.524; 10; 0.000700118; 1; 6; 0.00456394; 0.800664; 
+0; 870.190464; 1; 1; 83; 84; 138; 16.793; 0; 0; 870.19; 11; 0.000356409; 1; 6; 0.00354322; 0.759615; 
+0; 852.438207; 1; 1; 25; 26; 32; 16.793; 0; 0; 852.438; 9; 0.000449503; 1; 6; 0.00125495; 0.787879; 
+0; 865.672673; 1; 1; 44; 45; 63; 16.793; 0; 0; 865.673; 11; 0.000588513; 1; 6; 0.00120109; 0.739726; 
+0; 924.104058; 1; 1; 160; 161; 326; 16.793; 0; 0; 924.104; 12; 0.00154692; 1; 6; 0.0110112; 0.766562; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=100.00 rewire_factor=1.10 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 100
+rewire_factor = 1.1
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 946.684075; 1; 1; 64; 65; 118; 16.793; 0; 0; 946.684; 11; 0.000621697; 1; 6; 0.00362093; 0.745665; 
+0; 830.771287; 1; 1; 155; 156; 302; 16.793; 0; 0; 830.771; 11; 0.00105871; 1; 6; 0.00890601; 0.757685; 
+0; 832.967353; 1; 1; 90; 91; 146; 16.793; 0; 0; 832.967; 11; 0.000949576; 1; 6; 0.00449726; 0.810277; 
+0; 889.210850; 1; 1; 42; 43; 60; 16.793; 0; 0; 889.211; 10; 0.000629106; 1; 6; 0.0012537; 0.743243; 
+0; 767.101469; 1; 1; 71; 72; 124; 16.793; 0; 0; 767.101; 9; 0.000545855; 1; 6; 0.00254969; 0.755208; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=100.00 rewire_factor=1.50 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 100
+rewire_factor = 1.5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 799.019068; 1; 1; 35; 36; 51; 16.793; 0; 0; 799.019; 9; 0.00028908; 1; 6; 0.00124881; 0.714286; 
+0; 849.872569; 1; 1; 26; 27; 29; 16.793; 0; 0; 849.873; 9; 0.000486532; 1; 6; 0.00118966; 0.90625; 
+0; 907.314802; 1; 1; 84; 85; 184; 16.793; 0; 0; 907.315; 12; 0.000630636; 1; 6; 0.0047582; 0.740876; 
+0; 872.114536; 1; 1; 84; 85; 155; 16.793; 0; 0; 872.115; 11; 0.00156779; 1; 6; 0.00332669; 0.75431; 
+0; 773.754594; 1; 1; 19; 20; 21; 16.793; 0; 0; 773.755; 8; 0.000295663; 1; 6; 0.00126023; 0.909091; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=100.00 rewire_factor=2.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 100
+rewire_factor = 2
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 937.813260; 1; 1; 110; 111; 280; 16.793; 0; 0; 937.813; 11; 0.00100623; 1; 6; 0.00922461; 0.710648; 
+0; 868.415578; 1; 1; 36; 37; 46; 16.793; 0; 0; 868.416; 9; 0.000185659; 1; 6; 0.00123713; 0.836066; 
+0; 921.297411; 1; 1; 82; 83; 163; 16.793; 0; 0; 921.297; 11; 0.000767631; 1; 6; 0.00443759; 0.682609; 
+0; 949.849474; 1; 1; 28; 29; 34; 16.793; 0; 0; 949.849; 10; 0.000492552; 1; 6; 0.00194444; 0.842105; 
+0; 944.101956; 1; 1; 107; 108; 231; 16.793; 0; 0; 944.102; 12; 0.00109619; 1; 6; 0.00756214; 0.75; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=100.00 rewire_factor=5.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 100
+rewire_factor = 5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 947.216632; 1; 1; 86; 87; 145; 16.793; 0; 0; 947.217; 12; 0.00242142; 1; 6; 0.00514257; 0.810484; 
+0; 942.133018; 1; 1; 86; 87; 154; 16.793; 0; 0; 942.133; 12; 0.000488191; 1; 6; 0.00562602; 0.778243; 
+0; 840.934667; 1; 1; 22; 23; 28; 16.793; 0; 0; 840.935; 9; 0.000702939; 1; 6; 0.0012748; 0.793103; 
+0; 901.061908; 1; 1; 109; 110; 206; 16.793; 0; 0; 901.062; 12; 0.0026492; 1; 6; 0.00778021; 0.774854; 
+0; 719.246844; 1; 1; 27; 28; 33; 16.793; 0; 0; 719.247; 8; 5.21855e-05; 1; 6; 0.0012214; 0.823529; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=250.00 rewire_factor=1.05 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 250
+rewire_factor = 1.05
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 761.899831; 1; 1; 6; 7; 7; 16.793; 0; 0; 761.9; 4; 2.61904e-05; 1; 6; 0.00122361; 0.857143; 
+0; 731.740541; 1; 1; 15; 16; 21; 16.793; 0; 0; 731.741; 3; 5.3547e-06; 1; 6; 0.00299545; 0.806452; 
+0; 822.807464; 1; 1; 13; 14; 25; 16.793; 0; 0; 822.807; 5; 5.11083e-05; 1; 6; 0.00263509; 0.586207; 
+0; 736.332325; 1; 1; 13; 14; 19; 16.793; 0; 0; 736.332; 3; 6.24549e-06; 1; 6; 0.00124013; 0.75; 
+0; 826.213319; 1; 1; 16; 17; 26; 16.793; 0; 0; 826.213; 4; 1.90518e-05; 1; 6; 0.00208113; 0.75; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=250.00 rewire_factor=1.10 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 250
+rewire_factor = 1.1
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 745.816448; 1; 1; 9; 10; 11; 16.793; 0; 0; 745.816; 3; 5.92226e-06; 1; 6; 0.00136304; 0.894737; 
+0; 947.752431; 1; 1; 4; 5; 5; 16.793; 0; 0; 947.752; 4; 5.98988e-05; 1; 6; 0.00120186; 0.8; 
+0; 870.204941; 1; 1; 6; 7; 6; 16.793; 0; 0; 870.205; 4; 4.63432e-05; 1; 6; 0.00120677; 1; 
+0; 935.384390; 1; 1; 6; 7; 7; 16.793; 0; 0; 935.384; 4; 6.28151e-05; 1; 6; 0.00120371; 0.875; 
+0; 743.029175; 1; 1; 11; 12; 16; 16.793; 0; 0; 743.029; 3; 7.54066e-06; 1; 6; 0.000537942; 0.75; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=250.00 rewire_factor=1.50 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 250
+rewire_factor = 1.5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 847.189382; 1; 1; 9; 10; 11; 16.793; 0; 0; 847.189; 4; 3.13188e-05; 1; 6; 0.00124932; 0.846154; 
+0; 725.252058; 1; 1; 9; 10; 11; 16.793; 0; 0; 725.252; 4; 5.42135e-06; 1; 6; 0.00118702; 0.857143; 
+0; 727.665236; 1; 1; 31; 32; 56; 16.793; 0; 0; 727.665; 4; 1.24279e-05; 1; 6; 0.00238978; 0.774775; 
+0; 718.719777; 1; 1; 12; 13; 22; 16.793; 0; 0; 718.72; 3; 5.9386e-06; 1; 6; 0.00117985; 0.6; 
+0; 711.406727; 1; 1; 7; 8; 9; 16.793; 0; 0; 711.407; 3; 1.37603e-06; 1; 6; 0.00117155; 0.818182; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=250.00 rewire_factor=2.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 250
+rewire_factor = 2
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 804.016990; 1; 1; 23; 24; 37; 16.793; 0; 0; 804.017; 4; 2.89584e-05; 1; 6; 0.00116178; 0.762712; 
+0; 729.022289; 1; 1; 10; 11; 16; 16.793; 0; 0; 729.022; 3; 4.82615e-06; 1; 6; 0.00127773; 0.714286; 
+0; 793.960890; 1; 1; 21; 22; 32; 16.793; 0; 0; 793.961; 4; 5.07236e-05; 1; 6; 0.00119903; 0.77551; 
+0; 704.465362; 1; 1; 8; 9; 8; 16.793; 0; 0; 704.465; 3; 2.50417e-09; 1; 6; 0.00123294; 1; 
+0; 705.239498; 1; 1; 11; 12; 15; 16.793; 0; 0; 705.239; 3; 3.15983e-07; 1; 6; 0.0013276; 0.8; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=250.00 rewire_factor=5.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 250
+rewire_factor = 5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 749.575005; 1; 1; 18; 19; 25; 16.793; 0; 0; 749.575; 4; 1.29383e-05; 1; 6; 0.00118209; 0.820513; 
+0; 808.329896; 1; 1; 11; 12; 18; 16.793; 0; 0; 808.33; 4; 4.31039e-05; 1; 6; 0.00124989; 0.681818; 
+0; 888.688272; 1; 1; 9; 10; 13; 16.793; 0; 0; 888.688; 4; 3.36875e-05; 1; 6; 0.0013202; 0.8125; 
+0; 946.333787; 1; 1; 17; 18; 24; 16.793; 0; 0; 946.334; 5; 2.98197e-05; 1; 6; 0.00124205; 0.805556; 
+0; 731.698754; 1; 1; 8; 9; 8; 16.793; 0; 0; 731.699; 3; 5.34658e-06; 1; 6; 0.00123569; 1; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=500.00 rewire_factor=1.05 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 500
+rewire_factor = 1.05
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 805.700306; 1; 1; 12; 13; 21; 16.793; 0; 0; 805.7; 2; 6.43944e-06; 1; 6; 0.00124696; 0.71875; 
+0; 813.180855; 1; 1; 12; 13; 23; 16.793; 0; 0; 813.181; 3; 1.12468e-05; 1; 6; 0.00123511; 0.725; 
+0; 924.011436; 1; 1; 6; 7; 11; 16.793; 0; 0; 924.011; 2; 9.35908e-06; 1; 6; 0.00122171; 0.666667; 
+0; 705.562208; 1; 1; 13; 14; 22; 16.793; 0; 0; 705.562; 3; 2.05391e-07; 1; 6; 0.00122424; 0.74359; 
+0; 716.136148; 1; 1; 9; 10; 18; 16.793; 0; 0; 716.136; 2; 1.08265e-06; 1; 6; 0.00125675; 0.642857; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=500.00 rewire_factor=1.10 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 500
+rewire_factor = 1.1
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 707.824744; 1; 1; 13; 14; 30; 16.793; 0; 0; 707.825; 2; 3.06541e-07; 1; 6; 0.00119446; 0.653061; 
+0; 830.123002; 1; 1; 14; 15; 28; 16.793; 0; 0; 830.123; 3; 1.02024e-05; 1; 6; 0.00123335; 0.686275; 
+0; 722.038294; 1; 1; 9; 10; 24; 16.793; 0; 0; 722.038; 2; 1.51318e-06; 1; 6; 0.00139083; 0.666667; 
+0; 712.092402; 1; 1; 22; 23; 33; 16.793; 0; 0; 712.092; 2; 7.22346e-07; 1; 6; 0.00120522; 0.830769; 
+0; 799.602097; 1; 1; 6; 7; 7; 16.793; 0; 0; 799.602; 2; 6.29083e-06; 1; 6; 0.00131947; 0.9; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=500.00 rewire_factor=1.50 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 500
+rewire_factor = 1.5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 709.320459; 1; 1; 7; 8; 13; 16.793; 0; 0; 709.32; 2; 4.4308e-07; 1; 6; 0.0012408; 0.631579; 
+0; 714.896450; 1; 1; 14; 15; 31; 16.793; 0; 0; 714.896; 2; 1.02333e-06; 1; 6; 0.00121959; 0.627451; 
+0; 705.574256; 1; 1; 20; 21; 30; 16.793; 0; 0; 705.574; 2; 1.11621e-07; 1; 6; 0.00137186; 0.830508; 
+0; 729.537010; 1; 1; 29; 30; 58; 16.793; 0; 0; 729.537; 2; 2.09494e-06; 1; 6; 0.00238134; 0.722222; 
+0; 704.456118; 1; 1; 7; 8; 17; 16.793; 0; 0; 704.456; 2; 6.64037e-10; 1; 6; 0.00121568; 0.545455; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=500.00 rewire_factor=2.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 500
+rewire_factor = 2
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 704.450140; 1; 1; 10; 11; 18; 16.793; 0; 0; 704.45; 2; 0; 1; 6; 0.00121879; 0.68; 
+0; 944.109541; 1; 1; 24; 25; 41; 16.793; 0; 0; 944.11; 3; 2.32628e-05; 1; 6; 0.00124821; 0.707865; 
+0; 704.450241; 1; 1; 10; 11; 20; 16.793; 0; 0; 704.45; 2; 1.12135e-11; 1; 6; 0.00124835; 0.677419; 
+0; 704.732159; 1; 1; 11; 12; 16; 16.793; 0; 0; 704.732; 2; 3.04742e-08; 1; 6; 0.00128089; 0.807692; 
+0; 733.600582; 1; 1; 3; 4; 4; 16.793; 0; 0; 733.601; 2; 2.75141e-06; 1; 6; 0.00120157; 0.8; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=500.00 rewire_factor=5.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 500
+rewire_factor = 5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 706.735024; 1; 1; 4; 5; 4; 16.793; 0; 0; 706.735; 2; 2.50463e-07; 1; 6; 0.00131523; 1; 
+0; 772.199178; 1; 1; 7; 8; 11; 16.793; 0; 0; 772.199; 2; 5.26656e-06; 1; 6; 0.00129396; 0.722222; 
+0; 771.566663; 1; 1; 3; 4; 4; 16.793; 0; 0; 771.567; 2; 5.23311e-06; 1; 6; 0.00119946; 0.75; 
+0; 704.498417; 1; 1; 24; 25; 42; 16.793; 0; 0; 704.498; 2; 4.99208e-09; 1; 6; 0.00118745; 0.777778; 
+0; 709.645483; 1; 1; 29; 30; 53; 16.793; 0; 0; 709.645; 2; 4.88477e-07; 1; 6; 0.00125074; 0.738739; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=1320.04 rewire_factor=1.05 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 1320.04
+rewire_factor = 1.05
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 704.450140; 1; 1; 13; 14; 33; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00127243; 0.637931; 
+0; 704.450140; 1; 1; 4; 5; 8; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00117567; 0.636364; 
+0; 704.450140; 1; 1; 12; 13; 17; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.0013195; 0.83871; 
+0; 704.450140; 1; 1; 4; 5; 6; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00298643; 0.8; 
+0; 704.450140; 1; 1; 7; 8; 17; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00118204; 0.5; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=1320.04 rewire_factor=1.10 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 1320.04
+rewire_factor = 1.1
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 704.450140; 1; 1; 1; 2; 2; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00156127; 0.5; 
+0; 704.450140; 1; 1; 1; 2; 1; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00124905; 1; 
+0; 704.450140; 1; 1; 1; 2; 1; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.0012469; 1; 
+0; 704.450140; 1; 1; 26; 27; 48; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00226392; 0.765766; 
+0; 704.450140; 1; 1; 11; 12; 15; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.0012365; 0.805556; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=1320.04 rewire_factor=1.50 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 1320.04
+rewire_factor = 1.5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 704.450140; 1; 1; 13; 14; 30; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00124173; 0.631579; 
+0; 704.450140; 1; 1; 11; 12; 23; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00124672; 0.675676; 
+0; 704.450140; 1; 1; 29; 30; 46; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00339908; 0.824561; 
+0; 704.450140; 1; 1; 6; 7; 9; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00130612; 0.8125; 
+0; 704.450140; 1; 1; 13; 14; 20; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00121016; 0.8; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=1320.04 rewire_factor=2.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 1320.04
+rewire_factor = 2
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 704.450140; 1; 1; 2; 3; 4; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00124117; 0.6; 
+0; 704.450140; 1; 1; 6; 7; 15; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00122623; 0.521739; 
+0; 704.450140; 1; 1; 6; 7; 15; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.0014063; 0.590909; 
+0; 704.450140; 1; 1; 6; 7; 11; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00132763; 0.647059; 
+0; 704.450140; 1; 1; 6; 7; 9; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00342496; 0.769231; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.
+geometric_RRTstar new_state_rejection=1.00 range=1320.04 rewire_factor=5.00 delay_collision_checking=0.00
+21 common properties
+delay_collision_checking = 0
+focus_search = 0
+goal_bias = 0.05
+informed_sampling = 0
+longest_valid_segment_fraction = 0.00378777
+new_state_rejection = 1
+number_sampling_attempts = 100
+ordered_sampling = 0
+ordering_batch_size = 1
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+prune_threshold = 0.05
+pruned_measure = 0
+range = 1320.04
+rewire_factor = 5
+sample_rejection = 0
+tree_pruning = 0
+use_admissible_heuristic = 1
+use_k_nearest = 1
+valid_segment_count_factor = 1
+17 properties for each run
+approximate solution BOOLEAN
+best cost REAL
+correct solution BOOLEAN
+correct solution strict BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+iterations INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solution smoothness REAL
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 704.450140; 1; 1; 10; 11; 14; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00131044; 0.862069; 
+0; 704.450140; 1; 1; 15; 16; 47; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00128086; 0.463768; 
+0; 704.450140; 1; 1; 4; 5; 8; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.0133804; 0.666667; 
+0; 704.450140; 1; 1; 28; 29; 48; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.0101959; 0.781818; 
+0; 704.450140; 1; 1; 5; 6; 7; 16.793; 0; 0; 704.45; 1; 0; 1; 6; 0.00125574; 0.857143; 
+3 progress properties for each run
+best cost REAL
+iterations INTEGER
+time REAL
+5 runs
+
+
+
+
+
+.

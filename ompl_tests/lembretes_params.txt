@@ -1,0 +1,68 @@
+space:
+weights_ - peso de cada componente-> colocar em zero para o R2
+longestValidSegment_ = maxExtent_ * longestValidSegmentFraction_; - disponível só depois do setup() -> colocar 5 cm primeiramente
+longestValidSegmentFraction_ - fracão do segmento mais comprido válido - eh a fracão do maxExtent_ - valor entre 0 e 1
+getMaximumExtent - depende do tipo do state space - o do rn eh sqrt(soma do quadrado da extensão de cada dimensão) 
+    - de um compound state space eh a soma do maxExtent_ dos componentes vezes o peso
+maxExtent_  -  eh o resultado do getMaximumExtent
+validSegmentCount - o do compund eh o max entre os componentes o de um componente eh 
+    longestValidSegmentCountFactor_ * (unsigned int)ceil(distance(state1, state2) / longestValidSegment_);
+    eh quantos estados serão testados em uma motion para ver se o caminho é válido
+longestValidSegmentCountFactor_ - eh 1 e aparentemente só serve para isso - 
+    até onde vi nao eh necessário pois longestValidSegment_ não tem outro significado além do usado no motionValidator_ 
+
+
+si:
+setStateValidityCheckingResolution - só chama setLongestValidSegmentFraction so state space
+motionValidator_ - eh por default o discrete motion validator
+discreteMotionValidator - check motion - testa o estado final do motion e testa mais validSegmentCount(s1, s2) menos 1 porque s2 já foi testado
+    - vai testando dos meios das subdivisões para as suas pontas
+    
+sic:
+SimpleDirectedControlSampler - instanciado pelo sic com só uma tentativa - então fica aleatório para o RRTc pq ele não vai buscar o mais 
+    pŕoximo, vai pegar o único amostrado
+minSteps_ ou minControlDuration - usado para amostrar uma quantidade de steps para executar uma motion - no RRTc se a motion não chegar
+    em minSteps_ ela eh descartada
+maxSteps_ ou maxControlDuration - usado para amostrar uma quantidade de steps para executar uma motion
+step_size_ ou PropagationStepSize - eh usado para o propagateWhileValid, mas o seu uso não faz muito sentido pq sempre manda step_size_ para propagate 
+    não fala pro propagate qual step eh - settado no setup do sic: stepSize_ = getStateValidityCheckingResolution() * getMaximumExtent();
+    - ele está apenas limitando a quantidade máxima de steps 
+
+
+RRTg:
+addIntermediateStates_ - add estados que estão no meio de uma motion válida - a quantidade de estados adicionados a mais vai ser 
+    validSegmentCount(x0, xf) menos 1 -> testar com e sem
+range - distância máxima de uma motion, se a distância for maior, é feita interpolacão para achar um estado no meio do caminho
+    -> testar valores {10, 50, 100, 250, 500, maxExtent_}
+
+RRTc:
+addIntermediateStates_ - se true, chama propagateWhileValid passando vetor de states para armazenar o resultado. 
+
+
+RRT*:
+delayCC - faz com que o vizinho com menor custo e com um caminho válido até xnew seja selecionado como xnew.parent -> Deixar false
+useNewStateRejection_ - faz com que pontos que não tenham como gerar um caminho melhor do q o caminho já encontrado não sejam 
+    adicionados -> testar com e sem 
+rewireFactor - eh o que pode mudar a quantidade de vértices de xnear selecionados -> deixar 1.1 e testar {1.05, 1.1, 1.2, 1.3, 1.4}
+useKNearest_ -  -> deixar true para usar knearest 
+maxDistance_ - representa a distância max de uma motion -> testar {10, 50, 100, 250, 500, maxExtent_}
+optimizer - testar com path length e clearence e path length com distância da borda max
+useAdmissibleCostToCome_ - eh usado no solutionHeuristic para calcular a distância heurística do estado inicial até o estado atual; 
+    se falso calcula usando o custo do estado atual - o que não faz muito sentido -> deixar true
+useTreePruning_ -> deixar false
+pruneThreshold_ - só usado se useTreePruning_==true -> nao eh usado entao
+usePrunedMeasure_ - usado no setInformedSampling e se useTreePruning_==true -> nao eh usado entao
+setInformedSampling - usado apenas em setFocusSearch -> nao eh usado entao
+setFocusSearch - usado apenas se chamado pelo visto -> nao eh usado entao
+useOrderedSampling_ - tipo de sampling -> deixar false
+useRejectionSampling_ - tipo de sampling -> deixar false
+useInformedSampling_ - tipo de sampling -> deixar false
+
+SST:
+pruning_radius - o raio para fazer o pruning quando um xnew eh gerado -> não dá pra deixar o valor atual (muito pequeno)
+selection_radius - o raio para fazer a selecao do vértice que servirá de origem para a 
+    propagacão -> não dá pra deixar o valor atual (muito pequeno)
+    
+Condicao de parada:
+o SST possui duas condicoes de parada: (i) a passada por param ao solve que no benchmark eh a memoria e tempo e 
+(ii) achar uma solucao - se tiver optimizer tem um valor minimo para parar

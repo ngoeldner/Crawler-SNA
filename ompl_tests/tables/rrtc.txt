@@ -1,0 +1,13 @@
+\begin{table} [ht]
+\begin{center}
+\scalebox{1}{
+    \begin{tabular}{ |c|c| }
+        \hline
+        \multicolumn{1}{|c}{addI=False} & \multicolumn{1}{|c|}{addI=True} \\
+        \hline
+        putValue & putValue \\
+        \hline
+    \end{tabular}
+}
+\end{center}
+\end{table}

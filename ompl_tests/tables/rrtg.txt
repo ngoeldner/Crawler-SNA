@@ -1,0 +1,21 @@
+\begin{table} [ht]
+\begin{center}
+\scalebox{1}{
+    \begin{tabular}{ c|c|c|  }
+        \cline{2-3}
+        & \multicolumn{1}{c}{addIntermediateStates=False} & \multicolumn{1}{|c|}{addIntermediateStates=True} \\
+        \hline
+        \multicolumn{1}{|c|}{range=50.00}   & putValue & putValue \\
+        \hline
+        \multicolumn{1}{|c|}{range=100.00}  & putValue & putValue \\
+        \hline
+        \multicolumn{1}{|c|}{range=250.00}  & putValue & putValue \\
+        \hline
+        \multicolumn{1}{|c|}{range=500.00}  & putValue & putValue \\
+        \hline
+        \multicolumn{1}{|c|}{range=1320.04} & putValue & putValue \\
+        \hline
+    \end{tabular}
+}
+\end{center}
+\end{table}

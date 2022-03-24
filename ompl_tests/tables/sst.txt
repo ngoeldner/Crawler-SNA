@@ -1,0 +1,23 @@
+\begin{table} [ht]
+\begin{center}
+\scalebox{1}{
+    \begin{tabular}{ c|c|c|c|c|c|  }
+        \cline{2-6}
+        & \multicolumn{1}{c}{SR=0.2} & \multicolumn{1}{|c|}{SR=1.0}
+        & \multicolumn{1}{|c|}{SR=5.0} & \multicolumn{1}{|c|}{SR=25.0} 
+        & \multicolumn{1}{|c|}{SR=50.0} \\
+        \hline
+        \multicolumn{1}{|c|}{PR=1.0}  & putValue & putValue & putValue & putValue & putValue \\
+        \hline
+        \multicolumn{1}{|c|}{PR=2.5}  & putValue & putValue & putValue & putValue & putValue \\
+        \hline
+        \multicolumn{1}{|c|}{PR=5.0}  & putValue & putValue & putValue & putValue & putValue \\
+        \hline
+        \multicolumn{1}{|c|}{PR=10.0} & putValue & putValue & putValue & putValue & putValue \\
+        \hline
+        \multicolumn{1}{|c|}{PR=30.0} & putValue & putValue & putValue & putValue & putValue \\
+        \hline
+    \end{tabular}
+}
+\end{center}
+\end{table}

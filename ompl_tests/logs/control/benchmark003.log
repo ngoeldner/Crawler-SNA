@@ -1,0 +1,1173 @@
+OMPL version 
+Experiment RRT_TEST
+0 experiment properties
+Running on ngoeldner
+Starting at 2022-03-17 02:14:33
+<<<|
+Properties of the state space 'SE2CompoundSpace9'
+  - signature: 6 4 3 1 2 2 1 
+  - dimension: 3
+  - extent: 1500.04
+  - sanity checks for state space passed
+  - probability of valid states: 0.798
+  - average length of a valid motion: 536.185
+  - average number of samples drawn per second: sampleUniform()=4.94861e+06 sampleUniformNear()=3.47192e+06 sampleGaussian()=2.684e+06
+Settings for the state space 'SE2CompoundSpace9'
+  - state validity check resolution: 0.333325%
+  - valid segment count factor: 1
+  - state space:
+Compound state space 'SE2CompoundSpace9' of dimension 3 (locked) [
+Real vector state space 'RealVectorSpace10' of dimension 2 with bounds: 
+  - min: -400 -50 
+  - max: 400 1000 
+ of weight 1
+SO2 state space 'SO2Space11'
+ of weight 57.2958
+]
+Registered projections:
+  - <default>
+Projection of dimension 2
+Cell sizes (computed defaults): [40 52.5]
+
+Declared parameters:
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+valid_segment_count_factor = 1
+Valid state sampler named uniform with parameters:
+nr_attempts = 100
+  - control space:
+Real vector control space 'RealVectorControl[SE2CompoundSpace9]' with bounds: 
+  - min: 0 -0.20944 
+  - max: 10 0.20944 
+  - can propagate backward: yes
+  - propagation step size: 15
+  - propagation duration: [5, 15]
+Planner KPIECE1 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: bad_score_factor border_fraction goal_bias good_score_factor max_close_samples
+Declared parameters for planner KPIECE1:
+bad_score_factor = 0.45
+border_fraction = 0.8
+goal_bias = 0.05
+good_score_factor = 0.9
+max_close_samples = 30
+Start states:
+Compound state [
+RealVectorState [0 -50]
+SO2State [1.5708]
+]
+Goal state, threshold = 20, memory address = 0x5637bb7ffa80, state = 
+Compound state [
+RealVectorState [-325 750]
+SO2State [2.70041]
+]
+Optimization Objective: Path Length @0x5637bb78a050
+Optimization Threshold: 1125
+Average state cost: 0
+There are 0 solutions
+
+Properties of benchmarked planners:
+Planner RRTc intermediate_states=0.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias intermediate_states
+Planner RRTc intermediate_states=1.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias intermediate_states
+Planner SST selection_radius=0.20 pruning_radius=1.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=0.20 pruning_radius=2.50 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=0.20 pruning_radius=5.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=0.20 pruning_radius=10.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=0.20 pruning_radius=30.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=1.00 pruning_radius=1.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=1.00 pruning_radius=2.50 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=1.00 pruning_radius=5.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=1.00 pruning_radius=10.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=1.00 pruning_radius=30.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=5.00 pruning_radius=1.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=5.00 pruning_radius=2.50 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=5.00 pruning_radius=5.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=5.00 pruning_radius=10.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=5.00 pruning_radius=30.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=25.00 pruning_radius=1.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=25.00 pruning_radius=2.50 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=25.00 pruning_radius=5.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=25.00 pruning_radius=10.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=25.00 pruning_radius=30.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=50.00 pruning_radius=1.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=50.00 pruning_radius=2.50 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=50.00 pruning_radius=5.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=50.00 pruning_radius=10.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+Planner SST selection_radius=50.00 pruning_radius=30.00 specs:
+Multithreaded:                 No
+Reports approximate solutions: Yes
+Can optimize solutions:        No
+Aware of the following parameters: goal_bias pruning_radius selection_radius
+|>>>
+<<<|
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Byte Order:                      Little Endian
+Address sizes:                   39 bits physical, 48 bits virtual
+CPU(s):                          8
+On-line CPU(s) list:             0-7
+Thread(s) per core:              2
+Core(s) per socket:              4
+Socket(s):                       1
+NUMA node(s):                    1
+Vendor ID:                       GenuineIntel
+CPU family:                      6
+Model:                           142
+Model name:                      Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+Stepping:                        10
+CPU MHz:                         1345.686
+CPU max MHz:                     4000,0000
+CPU min MHz:                     400,0000
+BogoMIPS:                        3999.93
+Virtualization:                  VT-x
+L1d cache:                       128 KiB
+L1i cache:                       128 KiB
+L2 cache:                        1 MiB
+L3 cache:                        8 MiB
+NUMA node0 CPU(s):               0-7
+Vulnerability Itlb multihit:     KVM: Vulnerable
+Vulnerability L1tf:              Mitigation; PTE Inversion
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Full generic retpoline, IBRS_FW, STIBP conditional, RSB filling
+Vulnerability Srbds:             Mitigation; Microcode
+Vulnerability Tsx async abort:   Not affected
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+|>>>
+10870866074523568 is the random seed
+0.1 seconds per run
+4096 MB per run
+5 runs per planner
+14.4772 seconds spent to collect the data
+1 enum type
+status|Unknown status|Invalid start|Invalid goal|Unrecognized goal type|Timeout|Approximate solution|Exact solution|Crash|Unknown status
+27 planners
+control_RRTc intermediate_states=0.00
+10 common properties
+goal_bias = 0.05
+intermediate_states = 0
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 4371; 4372; 209.484; 0; 25.2757; 2265; 16; 0; 5; 0.10945; 0; 
+0; 1; 2335; 2336; 209.996; 0; 0; 2610; 17; 1; 6; 0.0546036; 0; 
+1; 1; 4435; 4436; 209.996; 0; 31.3852; 2310; 15; 0; 5; 0.111233; 0; 
+1; 1; 4224; 4225; 209.996; 0; 23.198; 2385; 14; 0; 5; 0.111536; 0; 
+1; 1; 4207; 4208; 209.996; 0; 24.0253; 2115; 13; 0; 5; 0.111046; 0; 
+.
+control_RRTc intermediate_states=1.00
+10 common properties
+goal_bias = 0.05
+intermediate_states = 1
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 5623; 5624; 209.996; 0; 0; 3015; 201; 1; 6; 0.0374277; 0; 
+1; 1; 9317; 9318; 209.996; 0; 32.1493; 2250; 150; 0; 5; 0.110768; 0; 
+1; 1; 10504; 10505; 210.512; 0; 56.9003; 2850; 190; 0; 5; 0.11047; 0; 
+1; 1; 10418; 10419; 210.512; 0; 46.9561; 2595; 173; 0; 5; 0.110393; 0; 
+1; 1; 9908; 9909; 210.512; 0; 23.6436; 2010; 134; 0; 5; 0.109862; 0; 
+.
+control_SST selection_radius=0.20 pruning_radius=1.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 1
+selection_radius = 0.2
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 2213; 2215; 210.512; 0; 28.3011; 2355; 14; 0; 5; 0.11099; 0; 
+0; 1; 2928; 2930; 210.512; 0; 0; 2640; 18; 1; 6; 0.111023; 0; 
+1; 1; 2981; 2983; 210.512; 0; 47.7519; 3600; 23; 0; 5; 0.111236; 0; 
+1; 1; 2524; 2526; 210.512; 0; 52.7971; 1785; 11; 0; 5; 0.110583; 0; 
+1; 1; 3020; 3022; 210.512; 0; 35.892; 2325; 15; 0; 5; 0.111223; 0; 
+.
+control_SST selection_radius=0.20 pruning_radius=2.50
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 2.5
+selection_radius = 0.2
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 2815; 2817; 210.512; 0; 0; 2985; 21; 1; 6; 0.111213; 0; 
+0; 1; 2237; 2239; 210.512; 0; 0; 2025; 13; 1; 6; 0.0816652; 0; 
+0; 1; 1230; 1232; 210.512; 0; 0; 2430; 15; 1; 6; 0.0393787; 0; 
+1; 1; 2810; 2812; 210.512; 0; 38.2827; 2730; 18; 0; 5; 0.110758; 0; 
+1; 1; 2876; 2878; 210.512; 0; 55.4362; 2070; 13; 0; 5; 0.110302; 0; 
+.
+control_SST selection_radius=0.20 pruning_radius=5.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 5
+selection_radius = 0.2
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 3170; 3172; 210.512; 0; 26.6396; 2220; 15; 0; 5; 0.111552; 0; 
+1; 1; 2880; 2882; 210.512; 0; 30.3032; 3405; 24; 0; 5; 0.111456; 0; 
+1; 1; 2768; 2770; 210.512; 0; 23.4122; 2835; 19; 0; 5; 0.108623; 0; 
+0; 1; 1308; 1310; 210.512; 0; 0; 2520; 16; 1; 6; 0.038866; 0; 
+1; 1; 3418; 3420; 210.512; 0; 39.181; 2490; 16; 0; 5; 0.111956; 0; 
+.
+control_SST selection_radius=0.20 pruning_radius=10.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 10
+selection_radius = 0.2
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 3594; 3596; 210.512; 0; 21.8518; 2385; 16; 0; 5; 0.111622; 0; 
+0; 1; 2795; 2797; 210.512; 0; 0; 2295; 14; 1; 6; 0.0956608; 0; 
+1; 1; 3055; 3057; 210.512; 0; 52.4594; 2535; 14; 0; 5; 0.111499; 0; 
+1; 1; 3067; 3069; 210.512; 0; 27.7988; 2865; 19; 0; 5; 0.11039; 0; 
+1; 1; 3155; 3157; 210.512; 0; 46.1181; 3075; 20; 0; 5; 0.111991; 0; 
+.
+control_SST selection_radius=0.20 pruning_radius=30.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 30
+selection_radius = 0.2
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 2050; 2052; 210.512; 0; 0; 2145; 15; 1; 6; 0.101707; 0; 
+1; 1; 1918; 1920; 210.512; 0; 28.4853; 2790; 16; 0; 5; 0.123572; 0; 
+1; 1; 2047; 2049; 210.512; 0; 32.1814; 2835; 17; 0; 5; 0.111815; 0; 
+0; 1; 996; 998; 210.512; 0; 0; 2055; 13; 1; 6; 0.0413267; 0; 
+1; 1; 2246; 2248; 210.512; 0; 35.4113; 2040; 13; 0; 5; 0.112584; 0; 
+.
+control_SST selection_radius=1.00 pruning_radius=1.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 1
+selection_radius = 1
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 5207; 5209; 210.512; 0; 0; 2730; 16; 1; 6; 0.111426; 0; 
+0; 1; 2507; 2509; 210.77; 0; 0; 2655; 16; 1; 6; 0.06219; 0; 
+1; 1; 3715; 3717; 210.77; 0; 32.7014; 2100; 14; 0; 5; 0.110511; 0; 
+1; 1; 3926; 3928; 211.027; 0; 31.942; 2850; 16; 0; 5; 0.111147; 0; 
+0; 1; 1242; 1244; 211.801; 0; 0; 2535; 18; 1; 6; 0.0301556; 0; 
+.
+control_SST selection_radius=1.00 pruning_radius=2.50
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 2.5
+selection_radius = 1
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 4543; 4545; 212.574; 0; 30.0607; 2535; 17; 0; 5; 0.110882; 0; 
+1; 1; 4480; 4482; 214.379; 0; 21.7555; 3045; 19; 0; 5; 0.111994; 0; 
+1; 1; 4280; 4282; 215.41; 0; 21.3059; 3180; 21; 0; 5; 0.11219; 0; 
+1; 1; 4054; 4056; 216.184; 0; 22.4193; 3240; 22; 0; 5; 0.108201; 0; 
+1; 1; 4162; 4164; 216.957; 0; 23.4786; 2760; 17; 0; 5; 0.111427; 0; 
+.
+control_SST selection_radius=1.00 pruning_radius=5.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 5
+selection_radius = 1
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 5009; 5011; 219.277; 0; 42.1079; 2370; 17; 0; 5; 0.110512; 0; 
+1; 1; 4282; 4284; 221.082; 0; 36.0798; 2805; 18; 0; 5; 0.112349; 0; 
+0; 1; 2007; 2009; 221.598; 0; 0; 2715; 18; 1; 6; 0.045843; 0; 
+1; 1; 4226; 4228; 221.598; 0; 41.8379; 2430; 15; 0; 5; 0.111069; 0; 
+0; 1; 3914; 3916; 222.887; 0; 0; 2595; 15; 1; 6; 0.111836; 0; 
+.
+control_SST selection_radius=1.00 pruning_radius=10.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 10
+selection_radius = 1
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 2583; 2585; 223.66; 0; 0; 2160; 14; 1; 6; 0.0524719; 0; 
+0; 1; 3987; 3989; 224.949; 0; 0; 3045; 20; 1; 6; 0.111995; 0; 
+0; 1; 3688; 3690; 226.496; 0; 0; 2805; 18; 1; 6; 0.0988683; 0; 
+1; 1; 3728; 3730; 227.012; 0; 25.3626; 2655; 17; 0; 5; 0.111476; 0; 
+1; 1; 3578; 3580; 227.785; 0; 20.4287; 2685; 18; 0; 5; 0.111265; 0; 
+.
+control_SST selection_radius=1.00 pruning_radius=30.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 30
+selection_radius = 1
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 2617; 2619; 228.301; 0; 37.6872; 1950; 14; 0; 5; 0.112441; 0; 
+1; 1; 2509; 2511; 229.332; 0; 32.6243; 2250; 16; 0; 5; 0.112645; 0; 
+1; 1; 2346; 2348; 229.59; 0; 33.568; 2310; 18; 0; 5; 0.11108; 0; 
+1; 1; 2379; 2381; 229.848; 0; 30.1775; 2580; 15; 0; 5; 0.111974; 0; 
+0; 1; 2393; 2395; 230.105; 0; 0; 2535; 17; 1; 6; 0.111825; 0; 
+.
+control_SST selection_radius=5.00 pruning_radius=1.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 1
+selection_radius = 5
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 4293; 4295; 232.168; 0; 31.0698; 2865; 18; 0; 5; 0.107633; 0; 
+0; 1; 3042; 3044; 233.715; 0; 0; 2820; 21; 1; 6; 0.0756968; 0; 
+1; 1; 4091; 4093; 233.973; 0; 26.0297; 1905; 12; 0; 5; 0.110388; 0; 
+0; 1; 3649; 3651; 235.262; 0; 0; 2280; 14; 1; 6; 0.110519; 0; 
+0; 1; 2197; 2199; 235.777; 0; 0; 2550; 17; 1; 6; 0.059472; 0; 
+.
+control_SST selection_radius=5.00 pruning_radius=2.50
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 2.5
+selection_radius = 5
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 3181; 3183; 236.293; 0; 0; 2550; 16; 1; 6; 0.0764926; 0; 
+1; 1; 3719; 3721; 237.582; 0; 32.667; 2955; 20; 0; 5; 0.109662; 0; 
+1; 1; 2831; 2833; 238.871; 0; 47.8037; 2970; 18; 0; 5; 0.110184; 0; 
+1; 1; 3290; 3292; 238.871; 0; 33.2533; 2910; 22; 0; 5; 0.110595; 0; 
+0; 1; 2488; 2490; 239.902; 0; 0; 2160; 14; 1; 6; 0.0637302; 0; 
+.
+control_SST selection_radius=5.00 pruning_radius=5.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 5
+selection_radius = 5
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 4683; 4685; 241.707; 0; 22.7043; 3330; 23; 0; 5; 0.110641; 0; 
+0; 1; 3787; 3789; 243.512; 0; 0; 2880; 16; 1; 6; 0.111631; 0; 
+0; 1; 1174; 1176; 243.77; 0; 0; 3270; 21; 1; 6; 0.0233867; 0; 
+1; 1; 3872; 3874; 243.77; 0; 38.7222; 2625; 16; 0; 5; 0.110517; 0; 
+0; 1; 3217; 3219; 244.801; 0; 0; 2130; 15; 1; 6; 0.0760958; 0; 
+.
+control_SST selection_radius=5.00 pruning_radius=10.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 10
+selection_radius = 5
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 4094; 4096; 246.348; 0; 0; 2640; 17; 1; 6; 0.110573; 0; 
+0; 1; 2532; 2534; 247.637; 0; 0; 2700; 16; 1; 6; 0.0659464; 0; 
+0; 1; 969; 971; 247.637; 0; 0; 2700; 19; 1; 6; 0.0188828; 0; 
+1; 1; 3983; 3985; 247.637; 0; 31.5876; 2790; 17; 0; 5; 0.112398; 0; 
+0; 1; 3511; 3513; 249.184; 0; 0; 3330; 21; 1; 6; 0.111229; 0; 
+.
+control_SST selection_radius=5.00 pruning_radius=30.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 30
+selection_radius = 5
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 33; 35; 249.699; 0; 0; 2100; 14; 1; 6; 0.00131184; 0; 
+1; 1; 2234; 2236; 249.699; 0; 22.4721; 2145; 13; 0; 5; 0.11089; 0; 
+1; 1; 2236; 2238; 250.215; 0; 36.1836; 2925; 19; 0; 5; 0.111273; 0; 
+1; 1; 2205; 2207; 250.473; 0; 22.2248; 1815; 12; 0; 5; 0.111545; 0; 
+0; 1; 327; 329; 250.988; 0; 0; 2205; 15; 1; 6; 0.00654487; 0; 
+.
+control_SST selection_radius=25.00 pruning_radius=1.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 1
+selection_radius = 25
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 4943; 4945; 252.535; 0; 26.2562; 3510; 23; 0; 5; 0.109947; 0; 
+1; 1; 4349; 4351; 254.34; 0; 28.5806; 2805; 20; 0; 5; 0.111175; 0; 
+1; 1; 4309; 4311; 254.855; 0; 24.5216; 2790; 18; 0; 5; 0.110949; 0; 
+0; 1; 349; 351; 255.887; 0; 0; 2805; 17; 1; 6; 0.00564324; 0; 
+0; 1; 4299; 4301; 256.145; 0; 0; 2685; 17; 1; 6; 0.110988; 0; 
+.
+control_SST selection_radius=25.00 pruning_radius=2.50
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 2.5
+selection_radius = 25
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 5034; 5036; 258.465; 0; 29.5134; 2310; 17; 0; 5; 0.110704; 0; 
+1; 1; 4218; 4220; 260.27; 0; 25.0681; 2670; 16; 0; 5; 0.111312; 0; 
+0; 1; 290; 292; 261.043; 0; 0; 1875; 12; 1; 6; 0.00473004; 0; 
+1; 1; 3961; 3963; 261.043; 0; 27.6016; 2325; 14; 0; 5; 0.11048; 0; 
+1; 1; 4097; 4099; 261.301; 0; 20.6754; 2730; 18; 0; 5; 0.11162; 0; 
+.
+control_SST selection_radius=25.00 pruning_radius=5.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 5
+selection_radius = 25
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 738; 740; 262.59; 0; 0; 2580; 17; 1; 6; 0.0111608; 0; 
+1; 1; 4654; 4656; 263.879; 0; 29.7213; 2745; 17; 0; 5; 0.1099; 0; 
+0; 1; 394; 396; 265.684; 0; 0; 2385; 16; 1; 6; 0.00700367; 0; 
+1; 1; 4236; 4238; 265.684; 0; 32.4759; 2520; 17; 0; 5; 0.10912; 0; 
+1; 1; 3564; 3566; 266.715; 0; 22.2121; 2835; 19; 0; 5; 0.111033; 0; 
+.
+control_SST selection_radius=25.00 pruning_radius=10.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 10
+selection_radius = 25
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 4077; 4079; 267.746; 0; 21.7481; 2535; 19; 0; 5; 0.110634; 0; 
+1; 1; 3993; 3995; 269.293; 0; 20.6828; 2025; 14; 0; 5; 0.112185; 0; 
+1; 1; 3844; 3846; 270.066; 0; 20.5826; 2760; 18; 0; 5; 0.111794; 0; 
+1; 1; 3132; 3134; 270.582; 0; 44.6538; 2400; 16; 0; 5; 0.111594; 0; 
+1; 1; 3465; 3467; 270.84; 0; 25.4769; 2535; 17; 0; 5; 0.111127; 0; 
+.
+control_SST selection_radius=25.00 pruning_radius=30.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 30
+selection_radius = 25
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 2465; 2467; 271.613; 0; 26.069; 2385; 13; 0; 5; 0.111234; 0; 
+1; 1; 2254; 2256; 272.387; 0; 28.0212; 1965; 12; 0; 5; 0.11149; 0; 
+0; 1; 253; 255; 272.645; 0; 0; 2550; 16; 1; 6; 0.00589736; 0; 
+1; 1; 2289; 2291; 272.902; 0; 26.9829; 2445; 16; 0; 5; 0.111572; 0; 
+0; 1; 696; 698; 272.902; 0; 0; 2325; 15; 1; 6; 0.0221351; 0; 
+.
+control_SST selection_radius=50.00 pruning_radius=1.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 1
+selection_radius = 50
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 2886; 2888; 273.676; 0; 0; 2850; 17; 1; 6; 0.0599916; 0; 
+1; 1; 4514; 4516; 275.223; 0; 26.7287; 3420; 21; 0; 5; 0.111256; 0; 
+0; 1; 4580; 4582; 277.027; 0; 0; 2985; 18; 1; 6; 0.112008; 0; 
+1; 1; 4402; 4404; 278.059; 0; 26.4554; 2460; 16; 0; 5; 0.11207; 0; 
+0; 1; 3862; 3864; 279.09; 0; 0; 2115; 13; 1; 6; 0.111727; 0; 
+.
+control_SST selection_radius=50.00 pruning_radius=2.50
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 2.5
+selection_radius = 50
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 4782; 4784; 280.895; 0; 21.4683; 2895; 19; 0; 5; 0.110878; 0; 
+1; 1; 4349; 4351; 282.699; 0; 30.0695; 2220; 14; 0; 5; 0.110778; 0; 
+0; 1; 975; 977; 283.473; 0; 0; 2535; 17; 1; 6; 0.0183943; 0; 
+1; 1; 4365; 4367; 283.473; 0; 32.4933; 2775; 19; 0; 5; 0.111536; 0; 
+0; 1; 782; 784; 284.504; 0; 0; 2385; 14; 1; 6; 0.0145957; 0; 
+.
+control_SST selection_radius=50.00 pruning_radius=5.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 5
+selection_radius = 50
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+1; 1; 4476; 4478; 284.762; 0; 32.2414; 2235; 15; 0; 5; 0.111126; 0; 
+1; 1; 4025; 4027; 286.051; 0; 31.6716; 2535; 16; 0; 5; 0.111588; 0; 
+0; 1; 2794; 2796; 286.566; 0; 0; 2325; 15; 1; 6; 0.0738981; 0; 
+1; 1; 3967; 3969; 286.824; 0; 25.2351; 3645; 23; 0; 5; 0.111755; 0; 
+1; 1; 4250; 4252; 288.113; 0; 40.9732; 1920; 11; 0; 5; 0.111539; 0; 
+.
+control_SST selection_radius=50.00 pruning_radius=10.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 10
+selection_radius = 50
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 4099; 4101; 290.176; 0; 0; 2775; 17; 1; 6; 0.111089; 0; 
+1; 1; 3926; 3928; 291.723; 0; 21.4404; 2565; 17; 0; 5; 0.111816; 0; 
+1; 1; 3548; 3550; 292.238; 0; 20.4476; 2595; 17; 0; 5; 0.111259; 0; 
+0; 1; 3723; 3725; 292.754; 0; 0; 2895; 18; 1; 6; 0.112136; 0; 
+1; 1; 3705; 3707; 293.527; 0; 31.5056; 2340; 13; 0; 5; 0.112226; 0; 
+.
+control_SST selection_radius=50.00 pruning_radius=30.00
+11 common properties
+goal_bias = 0.05
+longest_valid_segment_fraction = 0.00333325
+max_control_duration = 15
+min_control_duration = 5
+projection.cellsize.0 = 40
+projection.cellsize.1 = 52.5
+projection.cellsize_factor = 0
+propagation_step_size = 15
+pruning_radius = 30
+selection_radius = 50
+valid_segment_count_factor = 1
+13 properties for each run
+approximate solution BOOLEAN
+correct solution BOOLEAN
+graph motions INTEGER
+graph states INTEGER
+memory REAL
+solution clearance REAL
+solution difference REAL
+solution length REAL
+solution segments INTEGER
+solved BOOLEAN
+status ENUM
+time REAL
+valid segment fraction REAL
+5 runs
+0; 1; 1498; 1500; 294.301; 0; 0; 2040; 13; 1; 6; 0.0521613; 0; 
+1; 1; 2418; 2420; 294.301; 0; 36.7477; 2865; 17; 0; 5; 0.112088; 0; 
+1; 1; 2370; 2372; 295.074; 0; 28.3991; 2535; 16; 0; 5; 0.11129; 0; 
+0; 1; 2434; 2436; 295.332; 0; 0; 2895; 16; 1; 6; 0.111695; 0; 
+1; 1; 2386; 2388; 295.848; 0; 50.0162; 2160; 13; 0; 5; 0.111346; 0; 
+.
