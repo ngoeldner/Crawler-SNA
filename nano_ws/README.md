@@ -16,6 +16,20 @@ Para fazer a projeção dos pontos, usamos o modelo de câmera com distorção d
 
 > O modelo de Brown-Conrady considera as distorções que uma imagem capturada pode apresentar. Devemos notar que as câmeras reais não são equivalentes ao modelo de câmera de pinhole, elas geram algumas diferenças na imagem que nesse caso consideramos distorções. Dependendo da intensidade dessas distorções, o occupancy grid pode ficar bem distante da realidade.
 
+
+Exemplos de segmentação semântica e geração do OG:
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+
+<img src="../docs/images/final.png" alt="HTML5 Icon" style="width:50vw;" class=center>
+
+
 ## Arquivos
 Os arquivos `classes.txt` `colors.txt` `hrnet_w18.onnx` são arquivos necessários para realizar a segmentação semântica. 
 Em `classes.txt` estão os nomes das classes da rede; em `colors.txt` estão as cores em RGB de cada classe utilizadas para gerar a máscara
