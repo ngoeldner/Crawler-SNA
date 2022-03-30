@@ -46,3 +46,5 @@ em [**`visualize_cpp_results`**](./visualize_cpp_results/).
 Em [**`checkpoint_file_list`**](./checkpoint_file_list/) há uma lista de checkpoints associados com occupancy grids para serem lidos.
 
 Em [**`cpp_results`**](./cpp_results/), os .cpp que usam `skeletonize_and_define_gs.h` salvam seus resultados nessa pasta.
+
+> Informações do funcionamento da esqueletonização e definição de goal states no Crawler podem ser encontradas em [**`rasp_skel_gs_plan`**](../rasp_skel_gs_plan/).

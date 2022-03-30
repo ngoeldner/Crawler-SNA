@@ -5,3 +5,5 @@ Na pasta [**`occupancy_grid_tests`**](./occupancy_grid_tests), estão os testes 
 Na pasta [**`correct_nano_ogs`**](./correct_nano_ogs), há imagens utilizadas para os testes e os resultados dos testes.
 
 Explicações de como o occupancy grid é gerado encontram-se em  [**`nano_ws`**](../nano_ws/).
+
+> Informações do funcionamento da deração de occupancy grids no Crawler podem ser encontradas em [**`nano_ws`**](../nano_ws/).

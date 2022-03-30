@@ -1,7 +1,7 @@
 # Experimentos com o Planejamento de Movimentação
 
 Nesse diretório está o código que foi utilizado para realizar experimentos com o planejamento a movimentação.
-Ressaltamos que utilizamos a OMPL para realizar o planejamento de movimentação.
+Ressaltamos que utilizamos a OMPL para realizar o planejamento de movimentação. 
 
 Os principais arquivos deste diretório estão na pasta [**`tests`**](./tests/). 
 
@@ -22,3 +22,5 @@ Deixamos algumas anotações sobre alguns componentes e parâmetros de planners 
 A pasta [**`tables`**](./tables/) serve apenas para gerar alguns resultados em latex.
 
 Deixamos alguns exemplos de resultados esperados em `logs`, `databases`, `solution_paths` e `visualize_solutions`. 
+
+> Informações do funcionamento do planejamento de movimentação no Crawler podem ser encontradas em [**`rasp_skel_gs_plan`**](../rasp_skel_gs_plan/).
