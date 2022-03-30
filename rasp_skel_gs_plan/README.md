@@ -11,7 +11,7 @@ Criamos um método que depende da proximidade ao próximo checkpoint para guiar 
 
 A seguir apresentamos uma imagem de exemplos do passo a passo do método de definição do goal state desenvolvido.
 
-<img src="../docs/images/define_gs_steps_images.png" alt="drawing" style="width:80vw; display: block; margin-left: auto; margin-right:auto;">
+<img src="../docs/images/define_gs_steps_images.png" alt="drawing" style="width:40vw; display: block; margin-left: auto; margin-right:auto;">
 
 Na imagem, separamos em quatro etapas a obtenção do goal state. Em (1), mostramos o occupancy grid pré-processado com o esqueleto. Em (2), mostramos o ponto mais próximo do Crawler em verde e o checkpoint, se existir, em vermelho. Em (3), apresentamos o caminho selecionado e o ponto pertencente ao esqueleto que nos fez escolhê-lo. Quando não temos checkpoint o ponto estará em amarelo (representando a posição do goal state) e quando temos checkpoint o ponto estará em azul. Em (4), quando temos checkpoint estendemos o caminho a partir do ponto azul e, assim, obtemos o ponto amarelo representando o goal state; se o ponto vermelho não estiver visível em (3) ou em (4) é porque o ponto azul ou o amarelo podem estar por cima. Além disso, em (4), mostramos a orientação do goal state. A terceira linha representa um caso em que não há checkpoint próximo; para as demais há.
 
@@ -19,7 +19,7 @@ Na imagem, separamos em quatro etapas a obtenção do goal state. Em (1), mostra
 
 Para o planejamento de movimentação utilizamos um planner chamado de SST (Stable Sparse RRT). Utilizamos a implementação da biblioteca OMPL (Open Motion Planning Library). O planejamento de movimentação utiliza o occupancy grid para saber quais estados são válidos e utiliza o goal state como objetivo final para o planejamento. Abaixo apresentamos uma imagem com exemplos de trajetórias geradas.
 
-<img src="../docs/images/sst_final.png" alt="drawing" style="width:65vw; display: block; margin-left: auto; margin-right:auto;">
+<img src="../docs/images/sst_final.png" alt="drawing" style="width:35vw; display: block; margin-left: auto; margin-right:auto;">
 
 ## Arquivos
 Os principais arquivos desta pasta são o [**`skel_gs_plan.cpp`**](./skel_gs_plan.cpp) e o [**`skel_gs_plan.h`**](./skel_gs_plan.h). 
