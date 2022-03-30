@@ -18,16 +18,8 @@ Para fazer a projeção dos pontos, usamos o modelo de câmera com distorção d
 
 
 Exemplos de segmentação semântica e geração do OG:
-<style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-</style>
 
-<img src="../docs/images/final.png" alt="HTML5 Icon" style="width:50vw;" class=center>
+<img src="../docs/images/final.png" alt="HTML5 Icon" style="width:50vw;display: block; margin-left: auto; margin-right:auto;">
 
 
 ## Arquivos
